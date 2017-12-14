@@ -41,8 +41,14 @@ h3{
   display: flex;
   width: 250px;
 }
-#notImportant:hover, #misc:hover , #plugins:hover , #language:hover {
+#misc:hover , #plugins:hover , #language:hover {
   color: red;
+}
+#notImportant{
+  color: red;
+}
+#notImportant:hover{
+  color: black;
 }
 .jumbotron{
   position: relative;
