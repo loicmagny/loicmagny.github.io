@@ -4,13 +4,13 @@
   font-family: 'Bungee', cursive;
 }
 .nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline;
-     zoom:1;
+  float:none;
+  display:inline-block;
+  *display:inline;
+  zoom:1;
 }
 .nav-tabs, .nav-pills {
-    text-align:center;
+  text-align:center;
 }
 h2{
   font-size: 50px;
@@ -18,15 +18,21 @@ h2{
   font-family: 'Lobster', cursive;
 }
 p{
-font-family: 'Julius Sans One', sans-serif;
-font-size:50px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size:50px;
+}
+ol{
+  font-family: 'Acme', sans-serif;
+  font-size:25px;
+  list-style-type: disc;
+  color: ##E2E2E2
 }
 h1{
   font-size: 50px;
   color: black;
 }
 h3{
-font-family: 'Monoton', cursive;
+  font-family: 'Monoton', cursive;
 }
 #optional, #miscellaneous , #plugin , #languages{
   display: none;
@@ -42,13 +48,16 @@ font-family: 'Monoton', cursive;
   position: relative;
   bottom: 1%;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   padding: 1%;
   width: auto;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 #perks{
   width: auto;
+}
+#opquast{
+  color: green;
 }
 @keyframes "rotate_earth" {
   0% {
