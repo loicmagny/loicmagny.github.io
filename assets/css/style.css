@@ -95,3 +95,10 @@ h3{
     font-family: 'Cookie', cursive;
     display: none;
 }
+.link{
+    width: 5em;
+}
+.row.links{
+    display: flex;
+    flex-direction: row;
+}
