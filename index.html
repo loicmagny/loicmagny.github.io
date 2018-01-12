@@ -1,227 +1,256 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-  <title>CV Numérique Loïc Magny</title>
-  <!-- Bootstrap core CSS -->
-  <link href="assets/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-  <!-- CSS perso -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <ul class="nav nav-tabs">
-    <li><a href="#identity" data-toggle="tab" id="id">Identité</a></li>
-    <li><a href="#course" data-toggle="tab" id="courses">Parcours</a></li>
-    <li><a href="#perks" data-toggle="tab" id="perk">Compétences</a></li>
-    <li><a href="#hobby" data-toggle="tab" id="hobbies">Centres d'intérêts</a></li>
-  </ul>
-  <div id="center" align="center">
-    <div id="earth_holder">
-      <div id="earth_ball"></div>
-      <div id="earth_glow"></div>
-      <div id="earth"></div>
-    </div>
-  </div>
-  <div id="myTabContent" class="tab-content">
-    <div class="tab-pane fade in " id="identity">
-      <div class="jumbotron">
-        <h2>Identité</h2>
-        <p>MAGNY Loïc</p>
-        <p>29/05/1997</p>
-        <p>Adresse mail: loicmagny60@gmail.com<p>
-          <p>Téléphone: 06.48.27.70.16</p>
-          <a href="https://github.com/loicmagny"><img src="assets/img/github.png" alt="lien vers mon github" height="50px"/></a>
-          <a href="https://www.linkedin.com/in/lo%C3%AFc-magny-283139151/"><img src="assets/img/linkedin.png" alt="lien vers mon profil Linkedin" width="50px"></a>
-        </div>
-      </div>
-      <div class="tab-pane fade in " id="course">
-        <div class="jumbotron">
-          <div class="row">
-            <div class="col-lg-offset-1 col-lg-5">
-              <h2>Diplômes</h2>
-              <p>2017/2018: Formation développeur web, E2N.</p>
-              <p>Préparation Titre Professionnel "développeur logiciel" RNCP III (Bac +2)</p>
-              <p>Obtention de la certification <a data-toggle="modal" href="opquast" data-target="#myModal">Opquast</a></p>
-              <p>2015: Bac Economique et Social </p>
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/img/issuer_KBMGAY.svg" alt="badge opquast" width="30%"/>
-                      <p>795/1000</p>
-                      <a href="https://www.opquast.com/" id="opquast">Opquast.com</a>
-                    </div>
-                  </div>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"> 
+        <title>CV Numérique Loïc Magny</title>
+        <!-- Bootstrap core CSS -->
+        <link href="assets/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/libs/materialize/dist/css/materialize.css" rel="stylesheet">
+        <!-- CSS perso -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- Haut Haut, Bas Bas, Gauche Droite, Gauche Droite-->
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="user-view">
+                    <h1><span class="white-text builderName">Loïc Magny</span></h1>
+                    <span class="white-text">loicmagny60@gmail.com</span>
+                    <span class="white-text">06.48.27.70.16</span>
+                    <span class="white-text">29/051997</span>
                 </div>
-              </div>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#" class="white-text" id="course">Parcours</a></li>
+            <li><a href="#" class="white-text" id="perk">Compétences</a></li>
+            <li><a class=" white-text" href="#" id="hobby">Centres d'intérêts</a></li>
+            <li class="divider"></li>
+            <img src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png" alt="lien vers mon github""/><a href="https://github.com/loicmagny"></a>
+            <img src="https://www.iconsdb.com/icons/preview/white/linkedin-5-xxl.png" alt="lien vers mon profil Linkedin"/><a href="https://www.linkedin.com/in/lo%C3%AFc-magny-283139151/"></a>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large cyan pulse"><i class="material-icons">menu</i></a>
+        <div class="slider fullscreen">
+            <ul class="slides">
+                <li>
+                    <img src="http://www.zwallpapers.net/data/programs/images/akbar-s-royal-bathing-chamber-delhi-india_3554x1999.jpg" alt="Salle de bain royal en Inde">
+                </li>
+                <li>
+                    <img src="http://www.wallpaperbetter.com/wallpaper/998/400/948/honshu-island-2K-wallpaper.jpg" alt="île de Honshu au Japon">
+                </li>
+                <li>
+                    <img src="http://www.kiev-orthodox.org/wp-content/uploads/2017/03/chernaya-dyira.jpg" alt="trou noir">
+                    <div class="caption center-align">
+                        <p class="light grey-text text-lighten-3 quote">Nous sommes comme des papillons qui battent des ailes pendant un jour en pensant que c'est l'éternité.</p>
+                        <p class="quote">Carl Sagan</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://www.hdwallpapers.in/walls/beautiful_fjord_norway-wide.jpg" alt="Fjord norvégien">
+                </li>
+                <li>
+                    <img src="https://i.imgur.com/sZP6s5A.jpg" alt="plage de galet avec soleil couchant">
+                </li>
+            </ul>
+        </div>
+        <div class="section black" id="courses">
+            <div class="row container">
+                <div class="row">
+                    <div class="col-lg-offset-1 col-lg-5">
+                        <h2>Diplômes</h2>
+                        <p>2017/2018: Formation développeur web, E2N.</p>
+                        <p>Préparation Titre Professionnel "développeur logiciel" RNCP III (Bac +2)</p>
+                        <p>Obtention de la certification <a class="modal-trigger" href="#modal1">Opquast</a>
+                        <p>2015: Bac Economique et Social </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <h2>Expériences professionnelles</h2>
+                        <p>2017/2018: Développement de sites menés dans le cadre de la formation en Développement Web:</p>
+                        <ol>
+                            <li>Conception de 2 sites e-commerce, dont 1 en tant que chef de projet.</li>
+                            <li>Conception d'un site pour l'apprentissage du code.</li>
+                            <li>Mise en place du responsive sur un site.</li>
+                        </ol>
+                        <p>Novembre 2017:  Lauréat du Créathon "Dream Your Drone" lors des Inovia Drone Days à Noyon.</p>
+                        <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
+                        <p>Juillet 2017: Manutentionnaire chez St-Gobain.</p>
+                        <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain.</p>
+                    </div>
+                </div>
+                <h2 id="notImportant">Informations Complémentaires</h2>
+                <div id="optional">
+                    <p>Ancien pentathlète en filière d'accès au haut niveau</p>
+                    <p>Janvier 2017/Août 2017: Tentative d'entrée à l'armée</p>
+                </div>
             </div>
-            <div class="col-lg-5">
-              <h2>Expériences professionnelles</h2>
-              <p>2017/2018: Développement de sites menés dans le cadre de la formation en Développement Web:</p>
-              <ol>
-                <li>Conception de 2 sites e-commerce, dont 1 en tant que chef de projet.</li>
-                <li>Conception d'un site pour l'apprentissage du code.</li>
-                <li>Mise en place du responsive sur un site.</li>
-              </ol>
-              <p>Novembre 2017:  Lauréat du Créathon "Dream Your Drone" lors des Inovia Drone Days à Noyon.</p>
-              <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
-              <p>Juillet 2017: Manutentionnaire chez St-Gobain.</p>
-              <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain.</p>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <img src="assets/img/issuer_KBMGAY.svg" alt="badge opquast"/>
+                <p class="score">795/1000</p>
+                <a href="https://certificates.opquast.com/certificate/KBMGAY/" id="opquast" class="center score">Opquast.com</a>
             </div>
-          </div>
-        <h2 id="notImportant">Informations Complémentaires</h2>
-        <div id="optional"> 
-          <p>Ancien pentathlète en filière d'accès au haut niveau</p>
-          <p>Janvier 2017/Août 2017: Tentative d'entrée à l'armée</p>
         </div>
+        <div class="section black" id="perks">
+            <div class="row container">
+                <h2>Compétences</h2>
+                <h3 id="language">Langages</h3>
+                <div id="languages">
+                    <p>HTML</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 79%"></div>
+                    </div>
+                    <p>PHP</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+                <h3 id="plugins">Framework</h3>
+                <div id="plugin">
+                    <p>Bootstrap</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <p>Materialize</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 64%"></div>
+                    </div>
+                    <p>jQuery</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                    <p>AngularJs</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                    <p>NodeJs</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+                <h3 id="misc">Divers</h3>
+                <div id="miscellaneous">
+                    <p>Linux</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <p>Git</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 88%"></div>
+                    </div>
+                    <p>Apache</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 51%"></div>
+                    </div>
+                    <p>Atom</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 54%"></div>
+                    </div>
+                    <p>Grunt</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 10%"></div>
+                    </div>
+                    <p>Bower</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 10%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    <div class="tab-pane fade in " id="perks">
-      <div class="jumbotron">
-        <h2>Compétences</h2>
-        <h3 id="language">Langages</h3>
-        <div id="languages">
-          <p>HTML</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 90%"></div>
-          </div>
-          <p>CSS</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 85%"></div>
-          </div>
-          <p>Javascript</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 79%"></div>
-          </div>
-          <p>PHP</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 10%"></div>
-          </div>
+        <div class="section black" id="hobbies">
+            <div class="row container">
+                <h2>Centres d'intérêts</h2>
+                <p>Astrophysique</p>
+                <p>Histoire</p>
+                <p>Cinéma</p>
+                <p>Musique</p>
+            </div>
         </div>
-        <h3 id="plugins">Plugins</h3>
-        <div id="plugin">
-          <p>Bootstrap</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 75%"></div>
-          </div>
-          <p>jQuery</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 80%"></div>
-          </div>
-          <p>AngularJs</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 9%"></div>
-          </div>
-          <p>NodeJs</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 5%"></div>
-          </div>
-        </div>
-        <h3 id="misc">Divers</h3>
-        <div id="miscellaneous">
-          <p>Linux</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 90%"></div>
-          </div>
-          <p>Git</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 88%"></div>
-          </div>
-          <p>Apache</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 51%"></div>
-          </div>
-          <p>Atom</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 54%"></div>
-          </div>
-          <p>Grunt</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 10%"></div>
-          </div>
-          <p>Bower</p>
-          <div class="progress progress-striped active center-block">
-            <div class="progress-bar" style="width: 10%"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade in " id="hobby">
-      <div class="jumbotron">
-        <h2>Centres d'intérêts</h2>
-        <p>Astrophysique</p>
-        <p>Histoire</p>
-        <p>Cinéma</p>
-        <p>Musique</p>
-      </div>
-      <div>
-      </div>
-    </div>
-  </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery-3.2.1.js"></script>
-<script>
-$("#notImportant").click(function(){
-  $("#optional").toggle();
-  return false
-});
-$("#misc").click(function(){
-  $("#miscellaneous").toggle();
-  $("#languages").hide();
-  $("#plugin").hide();
-  return false
-});
-$("#language").click(function(){
-  $("#languages").toggle();
-  $("#plugin").hide();
-  $("#miscellaneous").hide();
-  return false
-});
-$("#plugins").click(function(){
-  $("#plugin").toggle();
-  $("#languages").hide();
-  $("#miscellaneous").hide();
-  return false
-});
-$("#id").click(function(){
-  $("#identity").toggle();
-  $("#course").hide();
-  $("#perks").hide();
-  $("#hobby").hide();
-});
-$("#courses").click(function(){
-  $("#course").toggle();
-  $("#perks").hide();
-  $("#hobby").hide();
-  $("#identity").hide();
-});
-$("#perk").click(function(){
-  $("#perks").toggle();
-  $("#course").hide();
-  $("#hobby").hide();
-  $("#identity").hide();
-});
-$("#hobbies").click(function(){
-  $("#hobby").toggle();
-  $("#perks").hide();
-  $("#course").hide();
-  $("#identity").hide();
-});
-</script>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
+        <script src="konamiCode.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#notImportant').click(function () {
+                    $('#optional').toggle();
+                    return false
+                });
+                $('#misc').click(function () {
+                    $('#miscellaneous').toggle();
+                    $('#languages').hide();
+                    $('#plugin').hide();
+                    return false
+                });
+                $('#language').click(function () {
+                    $('#languages').toggle();
+                    $('#plugin').hide();
+                    $('#miscellaneous').hide();
+                    return false
+                });
+                $('#plugins').click(function () {
+                    $('#plugin').toggle();
+                    $('#languages').hide();
+                    $('#miscellaneous').hide();
+                    return false
+                });
+                $('#course').click(function () {
+                    $('#courses').toggle();
+                    $('#perks').hide();
+                    $('#hobbies').hide();
+                });
+                $('#perk').click(function () {
+                    $('#perks').toggle();
+                    $('#courses').hide();
+                    $('#hobbies').hide();
+                });
+                $('#hobby').click(function () {
+                    $('#hobbies').toggle();
+                    $('#perks').hide();
+                    $('#courses').hide();
+                });
+                $()
+                $('.button-collapse').sideNav();
+                $('.button-collapse').sideNav({
+                    menuWidth: 250, // Default is 300
+                    edge: 'left', // Choose the horizontal origin
+                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    draggable: true // Choose whether you can drag to open on touch screens,
+                });
+                $('select').material_select();
+                // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+                $('select').select();
+
+                $('.slider').slider();
+                $('.parallax').parallax();
+                $('.tap-target').tapTarget('open');
+                $('.tap-target').tapTarget('close');
+                $('.carousel').carousel();
+                $('.modal').modal();
+                $('.modal').modal();
+                $('#modal1').on('click', function () {
+                    opacity: 1;
+                });
+            });
+        </script>
+    </body>
 </html>

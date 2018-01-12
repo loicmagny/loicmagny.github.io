@@ -1,725 +1,97 @@
-.nav.nav-tabs a{
-  color: red;
-  width: 200px;
-  font-family: 'Bungee', cursive;
+.side-nav{
+    background-color: black;
 }
-.nav-tabs > li, .nav-pills > li {
-  float:none;
-  display:inline-block;
-  *display:inline;
-  zoom:1;
+.button-collapse{
+    background-color: red;
+    border-radius: 50%;
+    width: 5em;
+    z-index: 11;
+}
+body a.button-collapse {
+    position: fixed;
+    left: 1vmin;
+    top:1vmin;
+}
+.builderName{
+    font-size: 2em;
+}
+.slider{
+    z-index: -1;
 }
 .nav-tabs, .nav-pills {
-  text-align:center;
+    text-align:center;
 }
 h2{
-  font-size: 50px;
-  color: black;
-  font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lobster', cursive;
 }
 p{
-  font-family: 'Julius Sans One', sans-serif;
-  font-size:50px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size:15px;
 }
 ol{
-  font-family: 'Acme', sans-serif;
-  font-size:25px;
-  list-style-type: disc;
-  color: ##E2E2E2
+    font-family: 'Acme', sans-serif;
+    font-size:25px;
+    list-style-type: disc;
+    color: #E2E2E2
 }
 h1{
-  font-size: 50px;
-  color: black;
+    font-size: 1em;
+    color: black;
 }
 h3{
-  font-family: 'Monoton', cursive;
+    font-family: 'Monoton', cursive;
+}
+#courses, #perks, #hobbies{
+    display: none;
+    z-index: 5;
 }
 #optional, #miscellaneous , #plugin , #languages{
-  display: none;
+    display: none;
 }
 .progress.progress-striped.active{
-  display: flex;
-  width: 250px;
+    display: flex;
+    width: 250px;
 }
 #misc:hover , #plugins:hover , #language:hover {
-  color: red;
+    color: red;
 }
 #notImportant{
-  color: red;
+    color: red;
 }
 #notImportant:hover{
-  color: black;
+    color: white;
 }
-.jumbotron{
-  position: relative;
-  bottom: 1%;
-  text-align: center;
-  font-size: 20px;
-  padding: 1%;
-  width: auto;
-  margin-top: 3%;
+.section{
+    display: relative;
+    position: relative;
+    bottom: 1%;
+    text-align: center;
+    padding: 1%;
+    margin-top: 3%;
+    opacity: 0.8
+}
+.section p h2 ol li{
+    opacity: 1 !important;
 }
 #perks{
-  width: auto;
+    width: auto;
+}
+.modal-content{
+    opacity: 1 !important;
+    height: 100%;
+    text-align: center;
+}
+.score{
+    font-size: 3em;
 }
 #opquast{
-  color: green;
+    color: green;
 }
-@keyframes "rotate_earth" {
-  0% {
-    background-position: 0px -2px;
-  }
-  50% {
-    background-position: 205px -2px;
-  }
-  100% {
-    background-position: 410px -2px;
-  }
-
-}
-
-@-moz-keyframes rotate_earth {
-  0% {
-    background-position: 0px -2px;
-  }
-  50% {
-    background-position: 205px -2px;
-  }
-  100% {
-    background-position: 410px -2px;
-  }
-
-}
-
-@-webkit-keyframes "rotate_earth" {
-  0% {
-    background-position: 0px -2px;
-  }
-  50% {
-    background-position: 205px -2px;
-  }
-  100% {
-    background-position: 410px -2px;
-  }
-
-}
-
-@-ms-keyframes "rotate_earth" {
-  0% {
-    background-position: 0px -2px;
-  }
-  50% {
-    background-position: 205px -2px;
-  }
-  100% {
-    background-position: 410px -2px;
-  }
-
-}
-
-@-o-keyframes "rotate_earth" {
-  0% {
-    background-position: 0px -2px;
-  }
-  50% {
-    background-position: 205px -2px;
-  }
-  100% {
-    background-position: 410px -2px;
-  }
-
-}
-
-body {
-  background: #fff url("http://lab.legomushroom.com/___img/sky_star2.jpg") 0px 0px;
-
-  -ms-overflow-x: hidden;
-  overflow-x: hidden;
-  margin: 0 auto;
-
-  -webkit-animation: sky 80s linear infinite;
-  -moz-animation: sky 80s linear infinite;
-  -ms-animation: sky 80s linear infinite;
-  -o-animation: sky 80s linear infinite;
-  animation: sky 80s linear infinite;
-}
-
-body div#moon_holder {
-  position: absolute;
-  left: -30%;
-  bottom: 60px;
-  z-index: 6;
-
-  -webkit-animation: launch_moon 240s linear infinite;
-  -moz-animation: launch_moon 240s linear infinite;
-  -ms-animation: launch_moon 240s linear infinite;
-  -o-animation: launch_moon 240s linear infinite;
-  animation: launch_moon 240s linear infinite;
-}
-
-body div#moon_holder img#moon {
-  width: 90px;
-  height: 90px;
-  border-radius: 90px;
-  position: absolute;
-  z-index: 0;
-
-  -webkit-animation: launch_moon_size 60s linear infinite;
-  -moz-animation: launch_moon_size 60s linear infinite;
-  -ms-animation: launch_moon_size 60s linear infinite;
-  -o-animation: launch_moon_size 60s linear infinite;
-  animation: launch_moon_size 60s linear infinite;
-
-  -webkit-box-shadow: -400px -30px 20px rgba(0,0,0,0.50);
-  box-shadow: -400px -30px 20px rgba(0,0,0,0.50);
-}
-
-body div#moon_holder div#moon_ball {
-  z-index: 1;
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  border-radius: 90px;
-  margin: 1px 1px 0px 0px;
-
-  -webkit-box-shadow: inset 20px -10px 37px #000, inset 0 0 27px #000;
-  -moz-box-shadow: inset 20px -10px 37px #000, inset 0 0 27px #000;
-  box-shadow: inset 20px -10px 37px #000, inset 0 0 27px #000;
-
-  -webkit-animation: launch_moon_ball_size 240s linear infinite;
-  -moz-animation: launch_moon_ball_size 240s linear infinite;
-  -ms-animation: launch_moon_ball_size 240s linear infinite;
-  -o-animation: launch_moon_ball_size 240s linear infinite;
-  animation: launch_moon_ball_size 240s linear infinite;
-}
-
-body div#moon_holder div#moon_back {
-  width: 90px;
-  height: 90px;
-  border-radius: 90px;
-  position: absolute;
-  z-index: 0;
-  background-color: #000;
-
-  -webkit-animation: launch_moon_ball_size 240s linear infinite;
-  -moz-animation: launch_moon_ball_size 240s linear infinite;
-  -ms-animation: launch_moon_ball_size 240s linear infinite;
-  -o-animation: launch_moon_ball_size 240s linear infinite;
-  animation: launch_moon_ball_size 240s linear infinite;
-}
-
-body div#earth_holder {
-  position: static;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  margin-top: 5%;
-}
-
-body div#earth_holder div#earth {
-  z-index: 2;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  background: url("http://lab.legomushroom.com/___img/11.jpg") 0px 0px;
-
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
-  -moz-box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), -400px -30px 130px rgba(0,0,0,0.50);
-  -webkit-box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), -400px -30px 130px rgba(0,0,0,0.50);
-  box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), -400px -30px 130px rgba(0,0,0,0.50);
-
-  -webkit-animation: rotate_earth 40s linear infinite;
-  -moz-animation: rotate_earth 40s linear infinite;
-  -ms-animation: rotate_earth 40s linear infinite;
-  -o-animation: rotate_earth 40s linear infinite;
-  animation: rotate_earth 40s linear infinite;
-}
-
-body div#earth_holder div#earth_glow {
-  z-index: 4;
-
-  -webkit-box-shadow: 0 0px 19px rgba(79,156,201,0.80);
-  box-shadow: 0 0px 19px rgba(79,156,201,0.80);
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-}
-
-body div#earth_holder div#earth_ball {
-  z-index: 3;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=74)";
-  filter: alpha(opacity=74);
-  opacity: 0.74;
-
-  -webkit-box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
-  box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
-}
-
-@keyframes "launch_moon" {
-  25% {
-    z-index: 6;
-  }
-  50% {
-    left: 140%;
-    bottom: 600px;
-    z-index: 0;
-  }
-  55% {
-    bottom: 680px;
-  }
-  75% {
-    z-index: 0;
-  }
-  100% {
-    left: -30%;
-    z-index: 6;
-    bottom: 100px;
-  }
-
-}
-
-@-moz-keyframes launch_moon {
-  25% {
-    z-index:6;
-  }
-  50% {
-    left: 140%;
-    bottom: 600px;
-    z-index: 0;
-  }
-  55% {
-    bottom: 680px;
-  }
-  75% {
-    z-index: 0;
-  }
-  100% {
-    left: -30%;
-    z-index: 6;
-    bottom: 100px;
-  }
-
-}
-
-@-webkit-keyframes "launch_moon" {
-  25% {
-    z-index: 6;
-  }
-  50% {
-    left: 140%;
-    bottom: 600px;
-    z-index: 0;
-  }
-  55% {
-    bottom: 680px;
-  }
-  75% {
-    z-index: 0;
-  }
-  100% {
-    left: -30%;
-    z-index: 6;
-    bottom: 100px;
-  }
-
-}
-
-@-ms-keyframes "launch_moon" {
-  25% {
-    z-index: 6;
-  }
-  50% {
-    left: 140%;
-    bottom: 600px;
-    z-index: 0;
-  }
-  55% {
-    bottom: 680px;
-  }
-  75% {
-    z-index: 0;
-  }
-  100% {
-    left: -30%;
-    z-index: 6;
-    bottom: 100px;
-  }
-
-}
-
-@-o-keyframes "launch_moon" {
-  25% {
-    z-index: 6;
-  }
-  50% {
-    left: 140%;
-    bottom: 600px;
-    z-index: 0;
-  }
-  55% {
-    bottom: 680px;
-  }
-  75% {
-    z-index: 0;
-  }
-  100% {
-    left: -30%;
-    z-index: 6;
-    bottom: 100px;
-  }
-
-}
-
-@keyframes "launch_moon_size" {
-  0% {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  50% {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-  75% {
-    -webkit-transform: scale(0.7, 0.7);
-    -moz-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
-    filter: alpha(opacity=35);
-    opacity: 0.35;
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    -moz-transform: scale(0.9, 0.9);
-    -o-transform: scale(0.9, 0.9);
-    -ms-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-
-}
-
-@-moz-keyframes launch_moon_size {
-  0% {
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  50% {
-    -moz-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  55% {
-    -moz-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-  75% {
-    -moz-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    filter: alpha(opacity=35);
-    opacity: 0.35;
-  }
-  100% {
-    -moz-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-
-}
-@-webkit-keyframes "launch_moon_size" {
-  0% {
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  50% {
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-  75% {
-    -webkit-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    filter: alpha(opacity=35);
-    opacity: 0.35;
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-
-}
-
-@-ms-keyframes "launch_moon_size" {
-  0% {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  50% {
-    -ms-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  55% {
-    -ms-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-  75% {
-    -ms-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
-    filter: alpha(opacity=35);
-    opacity: 0.35;
-  }
-  100% {
-    -ms-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-
-}
-
-@-o-keyframes "launch_moon_size" {
-  0% {
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  50% {
-    -o-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  55% {
-    -o-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-  75% {
-    -o-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    filter: alpha(opacity=35);
-    opacity: 0.35;
-  }
-  100% {
-    -o-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-  }
-
-}
-
-@keyframes "launch_moon_ball_size" {
-  50% {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-  }
-  55% {
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-  }
-  75% {
-    -webkit-transform: scale(0.7, 0.7);
-    -moz-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    -moz-transform: scale(0.9, 0.9);
-    -o-transform: scale(0.9, 0.9);
-    -ms-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-
-}
-
-@-moz-keyframes launch_moon_ball_size {
-  50% {
-    -moz-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-  }
-  55% {
-    -moz-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-  }
-  75% {
-    -moz-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-  }
-  100% {
-    -moz-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-
-}
-
-@-webkit-keyframes "launch_moon_ball_size" {
-  50% {
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-  }
-  55% {
-    -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-  }
-  75% {
-    -webkit-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-
-}
-
-@-ms-keyframes "launch_moon_ball_size" {
-  50% {
-    -ms-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-  }
-  55% {
-    -ms-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-  }
-  75% {
-    -ms-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-  }
-  100% {
-    -ms-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-
-}
-
-@-o-keyframes "launch_moon_ball_size" {
-  50% {
-    -o-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-  }
-  55% {
-    -o-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
-  }
-  75% {
-    -o-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-  }
-  100% {
-    -o-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-
-}
-
-@keyframes "sky" {
-  50% {
-    background-position: 318px 212px;
-  }
-  100% {
-    background-position: 635px 423px;
-  }
-
-}
-
-@-moz-keyframes sky {
-  50% {
-    background-position: 318px 212px;
-  }
-  100% {
-    background-position: 635px 423px;
-  }
-
-}
-
-@-webkit-keyframes "sky" {
-  50% {
-    background-position: 318px 212px;
-  }
-  100% {
-    background-position: 635px 423px;
-  }
-
-}
-
-@-ms-keyframes "sky" {
-  50% {
-    background-position: 318px 212px;
-  }
-  100% {
-    background-position: 635px 423px;
-  }
-
-}
-
-@-o-keyframes "sky" {
-  50% {
-    background-position: 318px 212px;
-  }
-  100% {
-    background-position: 635px 423px;
-  }
-
+.quote{
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    display: none;
 }
