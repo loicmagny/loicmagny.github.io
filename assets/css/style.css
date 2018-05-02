@@ -1,5 +1,6 @@
 .side-nav{
     background-color: black;
+    overflow-y: scroll;
 }
 .button-collapse{
     background-color: red;
@@ -12,59 +13,61 @@ body a.button-collapse {
     left: 1vmin;
     top:1vmin;
 }
-.builderName{
-    font-size: 2em;
+.makerName{
+    font-size: 1em;
 }
 .slider{
     z-index: -1;
+}
+#slider{
+    position: fixed;
 }
 .nav-tabs, .nav-pills {
     text-align:center;
 }
 h2{
-    font-size: 20px;
+    font-size: 2em;
     color: white;
-    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
 }
 p{
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Fira Mono', monospace;
     font-size:15px;
 }
 ol{
-    font-family: 'Acme', sans-serif;
-    font-size:25px;
+    font-family: 'Fira Mono', monospace;
+    font-size:15px;
     list-style-type: disc;
-    color: #E2E2E2
 }
 h1{
-    font-size: 1em;
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
     color: black;
 }
 h3{
-    font-family: 'Monoton', cursive;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
 }
 #courses, #perks, #hobbies{
     display: none;
     z-index: 5;
 }
-#optional, #miscellaneous , #plugin , #languages{
+#optional, #miscellaneous , #plugin , #languages, #pro, #degrees{
     display: none;
 }
 .progress.progress-striped.active{
     display: flex;
     width: 250px;
 }
-#misc:hover , #plugins:hover , #language:hover {
+.toggeable{
     color: red;
 }
-#notImportant{
-    color: red;
-}
-#notImportant:hover{
+.toggeable:hover{
     color: white;
 }
 .section{
     display: relative;
+    width: auto;
     position: relative;
     bottom: 1%;
     text-align: center;
@@ -80,25 +83,19 @@ h3{
 }
 .modal-content{
     opacity: 1 !important;
-    height: 100%;
+    height: auto;
     text-align: center;
 }
 .score{
-    font-size: 3em;
+    font-size: 1.6em;
 }
 #opquast{
     color: green;
 }
-.quote{
-    font-size: 3em;
-    text-align: center;
-    font-family: 'Cookie', cursive;
-    display: none;
-}
 .link{
+    height: auto;
     width: 5em;
 }
-.row.links{
-    display: flex;
-    flex-direction: row;
+.close{
+    float: right;
 }

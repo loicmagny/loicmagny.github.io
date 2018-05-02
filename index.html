@@ -7,13 +7,9 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet"> 
         <title>CV Numérique Loïc Magny</title>
         <!-- Bootstrap core CSS -->
         <link href="assets/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -26,10 +22,19 @@
         <ul id="slide-out" class="side-nav">
             <li>
                 <div class="user-view">
-                    <h1><span class="white-text builderName">Loïc Magny</span></h1>
-                    <span class="white-text">loicmagny60@gmail.com</span>
-                    <span class="white-text">06.48.27.70.16</span>
-                    <span class="white-text">29/051997</span>
+                    <h1><span class="white-text makername">Loïc Magny</span></h1>
+                    <span class="white-text makerInfo">loicmagny60@gmail.com</span>
+                    <span class="white-text makerInfo">06.48.27.70.16</span>
+                    <br/>
+                    <span class="white-text makerInfo">29/05/1997</span>
+                    <div class="row">
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github" href="https://github.com/loicmagny"><img src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png" alt="lien vers mon github" class="img-responsive link"/></a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Linkedin" href="https://www.linkedin.com/in/lo%C3%AFc-magny-283139151/"><img src="http://www.synapsehubs.com/wp-content/themes/synapse/assets/img/png/linkedin-icon.png" alt="lien vers mon profil Linkedin" class="img-responsive link" /></a>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li class="divider"></li>
@@ -38,8 +43,8 @@
             <li><a class=" white-text" href="#" id="hobby">Centres d'intérêts</a></li>
             <li class="divider"></li>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large cyan pulse"><i class="material-icons">menu</i></a>
-        <div class="slider fullscreen">
+        <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large blue pulse"><i class="material-icons">menu</i></a>
+        <div class="slider fullscreen" id="slider">
             <ul class="slides">
                 <li>
                     <img src="http://www.zwallpapers.net/data/programs/images/akbar-s-royal-bathing-chamber-delhi-india_3554x1999.jpg" alt="Salle de bain royal en Inde">
@@ -49,10 +54,6 @@
                 </li>
                 <li>
                     <img src="http://www.kiev-orthodox.org/wp-content/uploads/2017/03/chernaya-dyira.jpg" alt="trou noir">
-                    <div class="caption center-align">
-                        <p class="light grey-text text-lighten-3 quote">Nous sommes comme des papillons qui battent des ailes pendant un jour en pensant que c'est l'éternité.</p>
-                        <p class="quote">Carl Sagan</p>
-                    </div>
                 </li>
                 <li>
                     <img src="https://www.hdwallpapers.in/walls/beautiful_fjord_norway-wide.jpg" alt="Fjord norvégien">
@@ -63,198 +64,211 @@
             </ul>
         </div>
         <div class="section black" id="courses">
+            <i class="material-icons close tooltipped" id="closeCourses" data-position="bottom" data-delay="50" data-tooltip="Fermer">close</i>
             <div class="row container">
                 <div class="row">
-                    <div class="col-lg-offset-1 col-lg-5">
-                        <h2>Diplômes</h2>
-                        <p>2017/2018: Formation développeur web, E2N.</p>
-                        <p>Préparation Titre Professionnel "développeur logiciel" RNCP III (Bac +2)</p>
-                        <p>Obtention de la certification <a class="modal-trigger" href="#modal1">Opquast</a>
-                        <p>2015: Bac Economique et Social </p>
-                    </div>
-                    <div class="col-lg-5">
-                        <h2>Expériences professionnelles</h2>
-                        <p>2017/2018: Développement de sites menés dans le cadre de la formation en Développement Web:</p>
-                        <ol>
-                            <li>Conception de 2 sites e-commerce, dont 1 en tant que chef de projet.</li>
-                            <li>Conception d'un site pour l'apprentissage du code.</li>
-                            <li>Mise en place du responsive sur un site.</li>
-                        </ol>
-                        <p>Novembre 2017:  Lauréat du Créathon "Dream Your Drone" lors des Inovia Drone Days à Noyon.</p>
-                        <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
-                        <p>Juillet 2017: Manutentionnaire chez St-Gobain.</p>
-                        <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain.</p>
-                        <div class="col-xs-offset-3 col-xs-3">
-                            <a href="https://github.com/loicmagny"><img src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png" alt="lien vers mon github" class="img-responsive link"/></a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="https://www.linkedin.com/in/lo%C3%AFc-magny-283139151/"><img src="http://www.synapsehubs.com/wp-content/themes/synapse/assets/img/png/linkedin-icon.png" alt="lien vers mon profil Linkedin" class="img-responsive link" /></a>
+                    <div class=center">
+                        <h2 id="degreesList" class="toggeable btn-flat waves-effect waves-light">Diplômes</h2>
+                        <div id="degrees">
+                            <p>2017/2018: Formation développeur web, E2N.</p>
+                            <p>Préparation Titre Professionnel "développeur logiciel" RNCP III (Bac +2)</p>
+                            <p>Obtention de la certification <a class="modal-trigger" href="#modal1">Opquast</a>
+                            <p>2015: Bac Economique et Social </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        <h2 id="notImportant">Informations Complémentaires</h2>
-        <div id="optional">
-            <p>Ancien pentathlète en filière d'accès au haut niveau</p>
-            <p>Janvier 2017/Août 2017: Tentative d'entrée à l'armée</p>
-        </div>
-    </div>
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <img src="assets/img/issuer_KBMGAY.svg" alt="badge opquast"/>
-            <p class="score">795/1000</p>
-            <a href="https://certificates.opquast.com/certificate/KBMGAY/" id="opquast" class="center score">Opquast.com</a>
-        </div>
-    </div>
-    <div class="section black" id="perks">
-        <div class="row container">
-            <h2>Compétences</h2>
-            <h3 id="language">Langages</h3>
-            <div id="languages">
-                <p>HTML</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 90%"></div>
+                <div class="row>">
+                    <div class="center">
+                        <h2 class="toggeable btn-flat waves-effect waves-light" id="proList">Expériences professionnelles</h2>
+                        <div id="pro">
+                            <p>2017/2018: Développement de sites menés dans le cadre de la formation en Développement Web:</p>
+                            <ol>
+                                <li>Conception de 2 sites e-commerce, dont 1 en tant que chef de projet.</li>
+                                <li>Conception d'un site pour l'apprentissage du code.</li>
+                                <li>Mise en place du responsive sur un site.</li>
+                            </ol>
+                            <p>Novembre 2017:  Lauréat du Créathon "Dream Your Drone" lors des Inovia Drone Days à Noyon.</p>
+                            <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
+                            <p>Juillet 2017: Manutentionnaire chez St-Gobain.</p>
+                            <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain.</p>
+                        </div>
+                    </div>
                 </div>
-                <p>CSS</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 85%"></div>
-                </div>
-                <p>Javascript</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 79%"></div>
-                </div>
-                <p>PHP</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 70%"></div>
+                <h2 class="toggeable btn-flat waves-effect waves-light" id="notImportant">Informations Complémentaires</h2>
+                <div id="optional">
+                    <p>Ancien pentathlète en filière d'accès au haut niveau</p>
+                    <p>Janvier 2017/Août 2017: Tentative d'entrée à l'armée</p>
+                    <p>Détenteur du permis B</p>
                 </div>
             </div>
-            <h3 id="plugins">Framework</h3>
-            <div id="plugin">
-                <p>Bootstrap</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 75%"></div>
-                </div>
-                <p>Materialize</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 64%"></div>
-                </div>
-                <p>jQuery</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 80%"></div>
-                </div>
-                <p>AngularJs</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 40%"></div>
-                </div>
-                <p>NodeJs</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 70%"></div>
-                </div>
-            </div>
-            <h3 id="misc">Divers</h3>
-            <div id="miscellaneous">
-                <p>Linux</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 90%"></div>
-                </div>
-                <p>Git</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 88%"></div>
-                </div>
-                <p>Apache</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 51%"></div>
-                </div>
-                <p>Atom</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 54%"></div>
-                </div>
-                <p>Grunt</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 10%"></div>
-                </div>
-                <p>Bower</p>
-                <div class="progress progress-striped active center-block">
-                    <div class="progress-bar" style="width: 10%"></div>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <img src="assets/img/issuer_KBMGAY.svg" alt="badge opquast"/>
+                    <p class="score">795/1000</p>
+                    <a href="https://certificates.opquast.com/certificate/KBMGAY/" id="opquast" class="center score">Opquast.com</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section black" id="hobbies">
-        <div class="row container">
-            <h2>Centres d'intérêts</h2>
-            <p>Astrophysique</p>
-            <p>Histoire</p>
-            <p>Cinéma</p>
-            <p>Musique</p>
+        <div class="section black" id="perks">
+            <i class="material-icons close tooltipped" id="closePerks" data-position="bottom" data-delay="50" data-tooltip="Fermer">close</i>
+            <div class="row container">
+                <h2>Compétences</h2>
+                <h3 id="language" class="toggeable">Langages</h3>
+                <div id="languages">
+                    <p>HTML</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                    <p>PHP</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <p>MySQL</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <h3 id="plugins" class="toggeable">Framework</h3>
+                <div id="plugin">
+                    <p>Bootstrap</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <p>Materialize</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 64%"></div>
+                    </div>
+                    <p>jQuery</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                    <p>Symphony</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 15%"></div>
+                    </div>
+                </div>
+                <h3 id="misc" class="toggeable">Divers</h3>
+                <div id="miscellaneous">
+                    <p>Linux</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <p>Git</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 88%"></div>
+                    </div>
+                    <p>PHPMyAdmin</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <p>Apache</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 51%"></div>
+                    </div>
+                    <p>Doctrine</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 15%"></div>
+                    </div>
+                    <p>Grunt</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 10%"></div>
+                    </div>
+                    <p>Bower</p>
+                    <div class="progress progress-striped active center-block">
+                        <div class="progress-bar" style="width: 10%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
-    <script src="konamiCode.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#notImportant').click(function () {
-                $('#optional').toggle();
-                return false
-            });
-            $('#misc').click(function () {
-                $('#miscellaneous').toggle();
-                $('#languages').hide();
-                $('#plugin').hide();
-                return false
-            });
-            $('#language').click(function () {
-                $('#languages').toggle();
-                $('#plugin').hide();
-                $('#miscellaneous').hide();
-                return false
-            });
-            $('#plugins').click(function () {
-                $('#plugin').toggle();
-                $('#languages').hide();
-                $('#miscellaneous').hide();
-                return false
-            });
-            $('#course').click(function () {
-                $('#courses').toggle();
-                $('#perks').hide();
-                $('#hobbies').hide();
-            });
-            $('#perk').click(function () {
-                $('#perks').toggle();
-                $('#courses').hide();
-                $('#hobbies').hide();
-            });
-            $('#hobby').click(function () {
-                $('#hobbies').toggle();
-                $('#perks').hide();
-                $('#courses').hide();
-            });
-            $()
-            $('.button-collapse').sideNav();
-            $('.button-collapse').sideNav({
-                menuWidth: 250, // Default is 300
-                edge: 'left', // Choose the horizontal origin
-                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                draggable: true // Choose whether you can drag to open on touch screens,
-            });
-            $('select').material_select();
-            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-            $('select').select();
+        <div class="section black" id="hobbies">
+            <i class="material-icons close tooltipped" id="closeHobbies" data-position="bottom" data-delay="50" data-tooltip="Fermer">close</i>
+            <div class="row container">
+                <h2>Centres d'intérêts</h2>
+                <p>Astrophysique</p>
+                <p>Histoire</p>
+                <p>Cinéma</p>
+                <p>Musique</p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
+        <script src="konamiCode.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#degreesList').click(function () {
+                    $('#degrees').toggle();
+                    return false
+                });
+                $('#proList').click(function () {
+                    $('#pro').toggle();
+                    return false
+                });
+                $('#notImportant').click(function () {
+                    $('#optional').toggle();
+                    return false
+                });
+                $('#misc').click(function () {
+                    $('#miscellaneous').toggle();
+                    return false
+                });
+                $('#language').click(function () {
+                    $('#languages').toggle();
+                    return false
+                });
+                $('#plugins').click(function () {
+                    $('#plugin').toggle();
+                    return false
+                });
+                $('#course').click(function () {
+                    $('#courses').toggle();
+                });
+                $('#closeCourses').click(function () {
+                    $('#courses').hide();
+                });
+                $('#perk').click(function () {
+                    $('#perks').toggle();
+                });
+                $('#closePerks').click(function () {
+                    $('#perks').toggle();
+                });
+                $('#hobby').click(function () {
+                    $('#hobbies').toggle();
+                });
+                $('#closeHobbies').click(function () {
+                    $('#hobbies').toggle();
+                });
+                $()
+                $('.button-collapse').sideNav();
+                $('.button-collapse').sideNav({
+                    menuWidth: 250, // Default is 300
+                    edge: 'left', // Choose the horizontal origin
+                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    draggable: true // Choose whether you can drag to open on touch screens,
+                });
+                $('select').material_select();
+                // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+                $('select').select();
 
-            $('.slider').slider();
-            $('.parallax').parallax();
-            $('.tap-target').tapTarget('open');
-            $('.tap-target').tapTarget('close');
-            $('.carousel').carousel();
-            $('.modal').modal();
-            $('.modal').modal();
-            $('#modal1').on('click', function () {
-                opacity: 1;
+                $('.slider').slider();
+                $('.parallax').parallax();
+                $('.tap-target').tapTarget('open');
+                $('.tap-target').tapTarget('close');
+                $('.carousel').carousel();
+                $('.modal').modal();
+                $('.modal').modal();
+                $('#modal1').on('click', function () {
+                    opacity: 1;
+                });
             });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 </html>
