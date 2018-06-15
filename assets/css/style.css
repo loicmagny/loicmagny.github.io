@@ -30,25 +30,27 @@ h2{
     color: white;
     font-family: 'Righteous', cursive;
 }
-p{
+p, .makerInfo{
     font-family: 'Fira Mono', monospace;
     font-size:15px;
+    color: white;
+}
+a{
+    font-family: 'Fira Mono', monospace;
 }
 ol{
     font-family: 'Fira Mono', monospace;
     font-size:15px;
     list-style-type: disc;
+    color: white;
 }
 h1{
     font-family: 'Righteous', cursive;
     font-size: 3em;
     color: black;
 }
-h3{
-    font-family: 'Righteous', cursive;
-    font-size: 1em;
-}
 #courses, #perks, #hobbies{
+    position: relative;
     display: none;
     z-index: 5;
 }
@@ -59,16 +61,15 @@ h3{
     display: flex;
     width: 250px;
 }
-.toggeable{
+.toggeable, #course, #perk, #hobby{
     color: red;
 }
-.toggeable:hover{
+.toggeable:hover, #course:hover, #perk:hover, #hobby:hover{
     color: white;
 }
 .section{
-    display: relative;
     width: auto;
-    position: relative;
+    position: absolute;
     bottom: 1%;
     text-align: center;
     padding: 1%;
@@ -82,20 +83,195 @@ h3{
     width: auto;
 }
 .modal-content{
-    opacity: 1 !important;
     height: auto;
     text-align: center;
+    opacity: 1;
 }
 .score{
     font-size: 1.6em;
+    color: black;
 }
 #opquast{
     color: green;
 }
-.link{
-    height: auto;
-    width: 5em;
-}
 .close{
     float: right;
+    color: grey;
 }
+@keyframes "rotate_earth" {
+    0% {
+        background-position: 0px -2px;
+    }
+    50% {
+        background-position: 205px -2px;
+    }
+    100% {
+        background-position: 410px -2px;
+    }
+
+}
+
+@-moz-keyframes rotate_earth {
+    0% {
+        background-position: 0px -2px;
+    }
+    50% {
+        background-position: 205px -2px;
+    }
+    100% {
+        background-position: 410px -2px;
+    }
+
+}
+
+@-webkit-keyframes "rotate_earth" {
+    0% {
+        background-position: 0px -2px;
+    }
+    50% {
+        background-position: 205px -2px;
+    }
+    100% {
+        background-position: 410px -2px;
+    }
+
+}
+
+@-ms-keyframes "rotate_earth" {
+    0% {
+        background-position: 0px -2px;
+    }
+    50% {
+        background-position: 205px -2px;
+    }
+    100% {
+        background-position: 410px -2px;
+    }
+
+}
+
+@-o-keyframes "rotate_earth" {
+    0% {
+        background-position: 0px -2px;
+    }
+    50% {
+        background-position: 205px -2px;
+    }
+    100% {
+        background-position: 410px -2px;
+    }
+
+}
+
+body {
+    background: #fff url("http://lab.legomushroom.com/___img/sky_star2.jpg") 0px 0px;
+
+    -ms-overflow-x: hidden;
+    overflow-x: hidden;
+    margin: 0;
+
+    -webkit-animation: sky 80s linear infinite;
+    -moz-animation: sky 80s linear infinite;
+    -ms-animation: sky 80s linear infinite;
+    -o-animation: sky 80s linear infinite;
+    animation: sky 80s linear infinite;
+}
+
+body div#earth_holder {
+
+    position: static;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: 11%;
+}
+
+body div#earth_holder div#earth {
+    z-index: 2;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background: url("http://lab.legomushroom.com/___img/11.jpg") 0px 0px;
+
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+    -moz-box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), -400px -30px 130px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), -400px -30px 130px rgba(0,0,0,0.50);
+    box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), -400px -30px 130px rgba(0,0,0,0.50);
+
+    -webkit-animation: rotate_earth 40s linear infinite;
+    -moz-animation: rotate_earth 40s linear infinite;
+    -ms-animation: rotate_earth 40s linear infinite;
+    -o-animation: rotate_earth 40s linear infinite;
+    animation: rotate_earth 40s linear infinite;
+}
+
+body div#earth_holder div#earth_glow {
+    z-index: 4;
+
+    -webkit-box-shadow: 0 0px 19px rgba(79,156,201,0.80);
+    box-shadow: 0 0px 19px rgba(79,156,201,0.80);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+body div#earth_holder div#earth_ball {
+    z-index: 3;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=74)";
+    filter: alpha(opacity=74);
+    opacity: 0.74;
+
+    -webkit-box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
+    box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
+}
+@-moz-keyframes sky {
+    50% {
+        background-position: 318px 212px;
+    }
+    100% {
+        background-position: 635px 423px;
+    }
+
+}
+
+@-webkit-keyframes "sky" {
+    50% {
+        background-position: 318px 212px;
+    }
+    100% {
+        background-position: 635px 423px;
+    }
+
+}
+
+@-ms-keyframes "sky" {
+    50% {
+        background-position: 318px 212px;
+    }
+    100% {
+        background-position: 635px 423px;
+    }
+
+}
+
+@-o-keyframes "sky" {
+    50% {
+        background-position: 318px 212px;
+    }
+    100% {
+        background-position: 635px 423px;
+    }
+
+}
+
