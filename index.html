@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <svg id="svg"></svg>
         <!-- Haut Haut, Bas Bas, Gauche Droite, Gauche Droite-->
         <ul id="slide-out" class="side-nav">
             <li>
@@ -35,11 +36,7 @@
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large blue pulse"><i class="material-icons">menu</i></a>
         <div id="center" align="center">
-            <div id="earth_holder">
-                <div id="earth_ball"></div>
-                <div id="earth_glow"></div>
-                <div id="earth"></div>
-            </div> 
+            <div id="fiddleHook"></div>
         </div>
         <div class="section black" id="courses">
             <i class="material-icons close tooltipped" id="closeCourses" data-position="bottom" data-delay="50" data-tooltip="Fermer">close</i>
@@ -130,7 +127,6 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
-        <script src="konamiCode.js"></script>
         <script>
             $(document).ready(function () {
                 $('#degreesList').click(function () {
@@ -186,5 +182,6 @@
                 $('.modal').modal();
             });
         </script>
+        <script src="assets/js/web.js"></script>
     </body>
 </html>
