@@ -1,187 +1,266 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="../../favicon.ico">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet"> 
-        <title>CV Numérique Loïc Magny</title>
-        <link href="assets/libs/materialize/dist/css/materialize.css" rel="stylesheet">
-        <!-- CSS perso -->
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <svg id="svg"></svg>
-        <!-- Haut Haut, Bas Bas, Gauche Droite, Gauche Droite-->
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <h1><span class="white-text makername">Loïc Magny</span></h1>
-                    <span class="white-text makerInfo">loicmagny60@gmail.com</span>
-                    <span class="white-text makerInfo">06.48.27.70.16</span>
-                    <br/>
-                    <span class="white-text makerInfo">29/05/1997</span>
-                </div>
-            </li>
-            <li class="divider"></li>
-            <li><a href="#" id="course">Parcours</a></li>
-            <li><a href="#" id="perk">Compétences</a></li>
-            <li><a href="#" id="hobby">Centres d'intérêts</a></li>
-            <li class="divider"></li>
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large blue pulse"><i class="material-icons">menu</i></a>
-        <div id="center" align="center">
-            <div id="fiddleHook"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Mono"
+      rel="stylesheet"
+    />
+    <title>CV Numérique Loïc Magny</title>
+    <link
+      href="assets/libs/materialize/dist/css/materialize.css"
+      rel="stylesheet"
+    />
+    <!-- CSS perso -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <svg id="svg"></svg>
+    <!-- Haut Haut, Bas Bas, Gauche Droite, Gauche Droite-->
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <div class="user-view">
+          <h1><span class="white-text makername">Loïc Magny</span></h1>
+          <span class="white-text makerInfo">loicmagny60@gmail.com</span>
+          <span class="white-text makerInfo">06.48.27.70.16</span>
+          <br />
+          <span class="white-text makerInfo">29/05/1997</span>
         </div>
-        <div class="section black" id="courses">
-            <i class="material-icons close tooltipped" id="closeCourses" data-position="bottom" data-delay="50" data-tooltip="Fermer">close</i>
-            <div class="row container">
-                <div class="row">
-                    <div class="center">
-                        <h2 id="degreesList" class="toggeable btn-flat waves-effect waves-light">Diplômes</h2>
-                        <div id="degrees">
-                            <p>2017/2018: Titre Professionnel "développeur logiciel" RNCP III</p>
-                            <p> Formation développeur web, E2N.</p>
-                            <p>Obtention de la certification <a class="modal-trigger" href="#modal1">Opquast</a>
-                            <p>2015: Bac Economique et Social </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row>">
-                    <div class="center">
-                        <h2 class="toggeable btn-flat waves-effect waves-light" id="proList">Expériences professionnelles</h2>
-                        <div id="pro">
-                            <p>2017/2018: Développement de sites menés dans le cadre de la formation en Développement Web:</p>
-                            <ol>
-                                <li>Conception d'une application web "from scratch".</li>
-                                <li>Conception de 2 sites e-commerce, dont 1 en tant que chef de projet.</li>
-                                <li>Conception d'un site pour l'apprentissage du code.</li>
-                                <li>Mise en place du responsive sur un site.</li>
-                            </ol>
-                            <p>Novembre 2017:  Lauréat du Créathon "Dream Your Drone" lors des Inovia Drone Days à Noyon.</p>
-                            <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
-                            <p>Juillet 2017: Manutentionnaire chez St-Gobain.</p>
-                            <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain.</p>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="toggeable btn-flat waves-effect waves-light" id="notImportant">Informations Complémentaires</h2>
-                <div id="optional">
-                    <p>Ancien pentathlète en filière d'accès au haut niveau</p>
-                    <p>Bon niveau d'anglais</p>
-                    <p>Détenteur du permis B</p>
-                </div>
-            </div>
+      </li>
+      <li class="divider"></li>
+      <li><a href="#" id="course">Parcours</a></li>
+      <li><a href="#" id="perk">Compétences</a></li>
+      <li><a href="#" id="hobby">Centres d'intérêts</a></li>
+      <li class="divider"></li>
+    </ul>
+    <a
+      href="#"
+      data-activates="slide-out"
+      class="button-collapse btn-floating btn-large blue pulse"
+      ><i class="material-icons">menu</i></a
+    >
+    <div id="center" align="center">
+      <div id="fiddleHook"></div>
+    </div>
+    <div class="section black col s1 m3 l6" id="courses">
+      <i
+        class="material-icons close tooltipped"
+        id="closeCourses"
+        data-position="bottom"
+        data-delay="50"
+        data-tooltip="Fermer"
+        >close</i
+      >
+      <div class="row container">
+        <div class="row">
+          <h2
+            id="degreesList"
+            class="toggeable btn-flat waves-effect waves-light"
+          >
+            Diplômes
+          </h2>
+          <div id="degrees">
+            <p>
+              2017/2018: Titre Professionnel "développeur logiciel" RNCP III
+            </p>
+            <p>Formation développeur web, E2N.</p>
+            <p>
+              Obtention de la certification
+              <a class="modal-trigger" href="#modal1">Opquast</a>
+            </p>
+            <p>2015: Bac Economique et Social</p>
+          </div>
         </div>
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <img src="assets/img/issuer_KBMGAY.svg" alt="badge opquast" class=" img-responsive opquast"/>
-                <p class="score">795/1000</p>
-                <a href="https://certificates.opquast.com/certificate/KBMGAY/" id="opquast" class="center score">Opquast.com</a>
-            </div>
+        <div class="row>">
+          <h2 class="toggeable btn-flat waves-effect waves-light" id="proList">
+            Expériences professionnelles
+          </h2>
+          <div id="pro">
+            <p>
+              2017/2018: Développement de sites menés dans le cadre de la
+              formation en Développement Web:
+            </p>
+            <ol>
+              <li>Conception d'une application web "from scratch".</li>
+              <li>
+                Conception de 2 sites e-commerce, dont 1 en tant que chef de
+                projet.
+              </li>
+              <li>Conception d'un site pour l'apprentissage du code.</li>
+              <li>Mise en place du responsive sur un site.</li>
+            </ol>
+            <p>
+              Novembre 2017: Lauréat du Créathon "Dream Your Drone" lors des
+              Inovia Drone Days à Noyon.
+            </p>
+            <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
+            <p>Juillet 2017: Manutentionnaire chez St-Gobain.</p>
+            <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain.</p>
+          </div>
         </div>
-        <div class="section black" id="perks">
-            <i class="material-icons close tooltipped" id="closePerks" data-position="bottom" data-delay="50" data-tooltip="Fermer">close</i>
-            <div class="row container">
-                <h2 id="language" class="toggeable">Langages</h2>
-                <div id="languages">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p>
-                    <p>PHP</p>
-                    <p>MySQL</p>
-                </div>
-                <h2 id="plugins" class="toggeable">Framework</h2>
-                <div id="plugin">
-                    <p>Bootstrap</p>
-                    <p>Materialize</p>
-                    <p>jQuery</p>
-                    <p>Symphony</p>
-                </div>
-                <h2 id="misc" class="toggeable">Divers</h2>
-                <div id="miscellaneous">
-                    <p>Linux</p>
-                    <p>Git</p>
-                    <p>PHPMyAdmin</p>
-                    <p>Apache</p>
-                    <p>Doctrine</p>
-                    <p>Grunt</p>
-                    <p>Bower</p>
-                    <p>jMerise</p>
-                </div>
-            </div>
+        <div class="row">
+          <h2
+            class="toggeable btn-flat waves-effect waves-light"
+            id="notImportant"
+          >
+            Informations Complémentaires
+          </h2>
+          <div id="optional">
+            <p>Ancien pentathlète en filière d'accès au haut niveau</p>
+            <p>Bon niveau d'anglais</p>
+            <p>Détenteur du permis B</p>
+          </div>
         </div>
-        <div class="section black" id="hobbies">
-            <i class="material-icons close tooltipped" id="closeHobbies" data-position="bottom" data-delay="50" data-tooltip="Fermer">close</i>
-            <div class="row container">
-                <p>Jeux-vidéos</p>
-                <p>Histoire</p>
-                <p>Cinéma</p>
-                <p>Musique</p>
-            </div>
+      </div>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <img
+          src="assets/img/issuer_KBMGAY.svg"
+          alt="badge opquast"
+          class="img-responsive opquast"
+        />
+        <p class="score">795/1000</p>
+        <a
+          href="https://certificates.opquast.com/certificate/KBMGAY/"
+          id="opquast"
+          class="center score"
+          >Opquast.com</a
+        >
+      </div>
+    </div>
+    <div class="section black col s1 m3 l6" id="perks">
+      <i
+        class="material-icons close tooltipped"
+        id="closePerks"
+        data-position="bottom"
+        data-delay="50"
+        data-tooltip="Fermer"
+        >close</i
+      >
+      <div class="row container">
+        <h2 id="language" class="toggeable btn-flat waves-effect waves-light">
+          Langages
+        </h2>
+        <div id="languages">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+          <p>PHP</p>
+          <p>MySQL</p>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#degreesList').click(function () {
-                    $('#degrees').toggle();
-                    return false
-                });
-                $('#proList').click(function () {
-                    $('#pro').toggle();
-                    return false
-                });
-                $('#notImportant').click(function () {
-                    $('#optional').toggle();
-                    return false
-                });
-                $('#misc').click(function () {
-                    $('#miscellaneous').toggle();
-                    return false
-                });
-                $('#language').click(function () {
-                    $('#languages').toggle();
-                    return false
-                });
-                $('#plugins').click(function () {
-                    $('#plugin').toggle();
-                    return false
-                });
-                $('#course').click(function () {
-                    $('#courses').toggle();
-                });
-                $('#closeCourses').click(function () {
-                    $('#courses').hide();
-                });
-                $('#perk').click(function () {
-                    $('#perks').toggle();
-                });
-                $('#closePerks').click(function () {
-                    $('#perks').toggle();
-                });
-                $('#hobby').click(function () {
-                    $('#hobbies').toggle();
-                });
-                $('#closeHobbies').click(function () {
-                    $('#hobbies').toggle();
-                });
-                $()
-                $('.button-collapse').sideNav();
-                $('.button-collapse').sideNav({
-                    menuWidth: 250, // Default is 300
-                    edge: 'left', // Choose the horizontal origin
-                    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                    draggable: true // Choose whether you can drag to open on touch screens,
-                });
-                $('.modal').modal();
-            });
-        </script>
-        <script src="assets/js/web.js"></script>
-    </body>
+        <h2 id="plugins" class="toggeable btn-flat waves-effect waves-light">
+          Framework
+        </h2>
+        <div id="plugin">
+          <p>Bootstrap</p>
+          <p>Materialize</p>
+          <p>jQuery</p>
+          <p>Symphony</p>
+        </div>
+        <h2 id="misc" class="toggeable btn-flat waves-effect waves-light">
+          Divers
+        </h2>
+        <div id="miscellaneous">
+          <p>Linux</p>
+          <p>Git</p>
+          <p>PHPMyAdmin</p>
+          <p>Apache</p>
+          <p>Doctrine</p>
+          <p>Grunt</p>
+          <p>Bower</p>
+          <p>jMerise</p>
+        </div>
+      </div>
+    </div>
+    <div class="section black" id="hobbies">
+      <i
+        class="material-icons close tooltipped"
+        id="closeHobbies"
+        data-position="bottom"
+        data-delay="50"
+        data-tooltip="Fermer"
+        >close</i
+      >
+      <div class="row container">
+        <p>Jeux-vidéos</p>
+        <p>Histoire</p>
+        <p>Cinéma</p>
+        <p>Musique</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#degreesList").click(function () {
+          $("#degrees").toggle();
+          return false;
+        });
+        $("#proList").click(function () {
+          $("#pro").toggle();
+          return false;
+        });
+        $("#notImportant").click(function () {
+          $("#optional").toggle();
+          return false;
+        });
+        $("#misc").click(function () {
+          $("#miscellaneous").toggle();
+          return false;
+        });
+        $("#language").click(function () {
+          $("#languages").toggle();
+          return false;
+        });
+        $("#plugins").click(function () {
+          $("#plugin").toggle();
+          return false;
+        });
+        $("#course").click(function () {
+          $("#courses").toggle();
+        });
+        $("#closeCourses").click(function () {
+          $("#courses").hide();
+        });
+        $("#perk").click(function () {
+          $("#perks").toggle();
+        });
+        $("#closePerks").click(function () {
+          $("#perks").toggle();
+        });
+        $("#hobby").click(function () {
+          $("#hobbies").toggle();
+        });
+        $("#closeHobbies").click(function () {
+          $("#hobbies").toggle();
+        });
+        $("#courses").css("display", "none");
+        $("#perks").css("display", "none");
+        $("#hobbies").css("display", "none");
+        $(".button-collapse").sideNav();
+        $(".button-collapse").sideNav({
+          menuWidth: 250, // Default is 300
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true, // Choose whether you can drag to open on touch screens,
+        });
+        $(".modal").modal();
+      });
+    </script>
+    <script src="assets/js/web.js"></script>
+  </body>
 </html>
