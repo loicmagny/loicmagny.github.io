@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet" />
+    <title>CV Numérique Loïc Magny</title>
+    <link href="assets/libs/materialize/dist/css/materialize.css" rel="stylesheet" />
+    <!-- CSS perso -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <svg id="svg"></svg>
+    <!-- Haut Haut, Bas Bas, Gauche Droite, Gauche Droite-->
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <div class="user-view">
+          <h1><span class="white-text makername">Loïc Magny</span></h1>
+          <span class="white-text makerInfo">loicmagny60@gmail.com</span>
+          <span class="white-text makerInfo">06.48.27.70.16</span>
+          <br />
+          <span class="white-text makerInfo">29/05/1997</span>
+        </div>
+      </li>
+      <li class="divider"></li>
+      <li><a href="#" id="course">Parcours</a></li>
+      <li><a href="#" id="perk">Compétences</a></li>
+      <li><a href="#" id="hobby">Centres d'intérêts</a></li>
+      <li class="divider"></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large blue pulse"><i
+        class="material-icons">menu</i></a>
+    <div id="center" align="center">
+      <div id="fiddleHook"></div>
+    </div>
+    <div class="section black col s1 m3 l6" id="courses">
+      <a href="#" class="material-icons close tooltipped" id="closeCourses" data-position="bottom" data-delay="50"
+        data-tooltip="Fermer">close</a>
+      <div class="row container">
+        <div class="row">
+          <h2 id="degreesList" class="toggeable btn-flat waves-effect waves-light">
+            Diplômes
+          </h2>
+          <div id="degrees">
+            <ul>
+              <li>
+                Septembre 2017/ Avril 2018: Titre Professionnel "Développeur Logiciel" RNCP III
+              </li>
+              <li>Formation développeur web, Ecole du Numérique du Noyonnais (E2N).</li>
+            </ul>
+            <p>
+              Obtention de la certification
+              <a class="modal-trigger" href="#modalOpquast">Opquast</a>
+            </p>
+            <p>2015: Bac Economique et Social</p>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="toggeable btn-flat waves-effect waves-light" id="proList">
+            Expériences professionnelles
+          </h2>
+          <div id="pro">
+
+            <p>Décembre 2018: Facteur chez La Poste, Thourotte</p>
+            <p>Juillet/Août 2018: Facteur chez La Poste, Compiègne</p>
+            <p>
+              Octobre 2017/ Avril 2018: Développement de sites menés dans le cadre de la
+              formation en Développement Web:
+            </p>
+            <ol>
+              <li>Conception d'une application web "from scratch".</li>
+              <li>
+                Conception de 2 sites e-commerce, dont 1 en tant que chef de
+                projet.
+              </li>
+              <li>Conception d'un site pour l'apprentissage du code.</li>
+              <li>Mise en place du responsive sur un site.</li>
+            </ol>
+            <p>
+              Novembre 2017: Lauréat du Créathon "Dream Your Drone" lors des
+              Inovia Drone Days à Noyon.
+            </p>
+            <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
+            <p>Juillet 2017: Manutentionnaire chez St-Gobain, Thourotte.</p>
+            <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain, Thourotte.</p>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="toggeable btn-flat waves-effect waves-light" id="notImportant">
+            Informations Complémentaires
+          </h2>
+          <div id="optional">
+            <p>Ancien pentathlète en filière d'accès au haut niveau</p>
+            <p>Anglais courant</p>
+            <p>Permis B, véhiculé</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modalOpquast" class="modal">
+      <div class="modal-content">
+        <img src="assets/img/issuer_KBMGAY.svg" alt="badge opquast" class="img-responsive opquast" />
+        <p class="score">795/1000</p>
+        <a href="https://certificates.opquast.com/certificate/KBMGAY/" id="opquast" class="center score">Opquast.com</a>
+      </div>
+    </div>
+    <div class="section black col s1 m3 l6" id="perks">
+      <a href="#" class="material-icons close tooltipped left" id="closePerks" data-position="bottom" data-delay="50"
+        data-tooltip="Fermer">close</a>
+      <div class="row container">
+        <div class="row">
+          <h2 id="language" class="toggeable btn-flat waves-effect waves-light">
+            Langages
+          </h2>
+          <div id="languages">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>C</li>
+              <li>C++</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <h2 id="plugins" class="toggeable btn-flat waves-effect waves-light">
+            Framework
+          </h2>
+          <div id="plugin">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Materialize</li>
+              <li>jQuery</li>
+              <li>Symphony</li>
+              <li>VueJS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <h2 id="misc" class="toggeable btn-flat waves-effect waves-light">
+            Divers
+          </h2>
+          <div id="miscellaneous">
+            <ul>
+              <li>WAMP</li>
+              <li>LAMP</li>
+              <li>Wordpress</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>InDesign</li>
+              <li>Adobe XD</li>
+              <li>Laragon</li>
+              <li>OpenGL</li>
+              <li>Composer</li>
+              <li></li>
+              <li>Git</li>
+              <li>PHPMyAdmin</li>
+              <li>Apache</li>
+              <li>Doctrine</li>
+              <li>Grunt</li>
+              <li>Bower</li>
+              <li>jMerise</li>
+              <li>Trello</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section black" id="hobbies">
+      <a href="#" class="material-icons close tooltipped" id="closeHobbies" data-position="bottom" data-delay="50"
+        data-tooltip="Fermer">close</a>
+      <div class="row container">
+        <p>Jeux-vidéos</p>
+        <p>Histoire</p>
+        <p>Cinéma</p>
+        <p>Musique</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
+    <script src="assets/js/materializeDOMElements.js">
+    </script>
+    <script src="assets/js/web.js"></script>
+  </body>
+
+</html>
