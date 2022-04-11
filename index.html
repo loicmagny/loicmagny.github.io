@@ -18,179 +18,502 @@
   </head>
 
   <body>
-    <svg id="svg"></svg>
+    <canvas></canvas>
     <!-- Haut Haut, Bas Bas, Gauche Droite, Gauche Droite-->
-    <ul id="slide-out" class="side-nav">
-      <li>
-        <div class="user-view">
-          <h1><span class="white-text makername">Loïc Magny</span></h1>
-          <span class="white-text makerInfo">loicmagny60@gmail.com</span>
-          <span class="white-text makerInfo">06.48.27.70.16</span>
-          <br />
-          <span class="white-text makerInfo">29/05/1997</span>
-        </div>
-      </li>
-      <li class="divider"></li>
-      <li><a href="#" id="course">Parcours</a></li>
-      <li><a href="#" id="perk">Compétences</a></li>
-      <li><a href="#" id="hobby">Centres d'intérêts</a></li>
-      <li class="divider"></li>
-    </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large blue pulse"><i
-        class="material-icons">menu</i></a>
-    <div id="center" align="center">
-      <div id="fiddleHook"></div>
-    </div>
-    <div class="section black col s1 m3 l6" id="courses">
-      <a href="#" class="material-icons close tooltipped" id="closeCourses" data-position="bottom" data-delay="50"
-        data-tooltip="Fermer">close</a>
-      <div class="row container">
-        <div class="row">
-          <h2 id="degreesList" class="toggeable btn-flat waves-effect waves-light">
-            Diplômes
-          </h2>
-          <div id="degrees">
-            <ul>
-              <li>
-                Septembre 2017/ Avril 2018: Titre Professionnel "Développeur Logiciel" RNCP III
-              </li>
-              <li>Formation développeur web, Ecole du Numérique du Noyonnais (E2N).</li>
-            </ul>
-            <p>
-              Obtention de la certification
-              <a class="modal-trigger" href="#modalOpquast">Opquast</a>
-            </p>
-            <p>2015: Bac Economique et Social</p>
-          </div>
-        </div>
-        <div class="row">
-          <h2 class="toggeable btn-flat waves-effect waves-light" id="proList">
-            Expériences professionnelles
-          </h2>
-          <div id="pro">
 
-            <p>Décembre 2018: Facteur chez La Poste, Thourotte</p>
-            <p>Juillet/Août 2018: Facteur chez La Poste, Compiègne</p>
-            <p>
-              Octobre 2017/ Avril 2018: Développement de sites menés dans le cadre de la
-              formation en Développement Web:
-            </p>
-            <ol>
-              <li>Conception d'une application web "from scratch".</li>
-              <li>
-                Conception de 2 sites e-commerce, dont 1 en tant que chef de
-                projet.
-              </li>
-              <li>Conception d'un site pour l'apprentissage du code.</li>
-              <li>Mise en place du responsive sur un site.</li>
-            </ol>
-            <p>
-              Novembre 2017: Lauréat du Créathon "Dream Your Drone" lors des
-              Inovia Drone Days à Noyon.
-            </p>
-            <p>Septembre 2017: Serveur au restaurant La Meïda, Lille</p>
-            <p>Juillet 2017: Manutentionnaire chez St-Gobain, Thourotte.</p>
-            <p>Juillet/Août 2016: Manutentionnaire chez St-Gobain, Thourotte.</p>
-          </div>
-        </div>
+    <section class="section black" id="about">
+      <div class="section">
+        <a href="#" class="material-icons close tooltipped" id="closeAbout" data-position="bottom" data-delay="50"
+          data-tooltip="Fermer">close</a>
         <div class="row">
-          <h2 class="toggeable btn-flat waves-effect waves-light" id="notImportant">
-            Informations Complémentaires
-          </h2>
-          <div id="optional">
-            <p>Ancien pentathlète en filière d'accès au haut niveau</p>
-            <p>Anglais courant</p>
-            <p>Permis B, véhiculé</p>
-          </div>
+          <ul class="pagination">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active green darken-4"><a href="#!">A propos de moi</a></li>
+            <li class="waves-effect active indigo darken-4"><a href="#!" class="perk">Compétences</a></li>
+            <li class="waves-effect active indigo darken-4"><a href="#!" class="course">Parcours</a></li>
+            <li class="waves-effect active indigo darken-4 "><a href="#" class="perk"><i
+                  class="material-icons">chevron_right</i></a></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div id="modalOpquast" class="modal">
-      <div class="modal-content">
-        <img src="assets/img/issuer_KBMGAY.svg" alt="badge opquast" class="img-responsive opquast" />
-        <p class="score">795/1000</p>
-        <a href="https://certificates.opquast.com/certificate/KBMGAY/" id="opquast" class="center score">Opquast.com</a>
+      <div class="row">
+        <div class="row center">
+          <h2>Loïc MAGNY</h2>
+          <img class="img-responsive circle" src="assets/img/ldZI1m5-.jpg" alt="photo de profil">
+        </div>
+        <div class="section">
+          <div class="row">
+            <h2 class="header">A propos de moi</h2>
+            <p class="white-text text-darken-3 lighten-3">Je suis un jeune développeur passionné par de nombreux sujets
+              dont notamment les jeux-vidéos ou le cinéma ou bien encore des domaines comme la musique, notamment
+              urbaine.</p>
+            <p>Mes références dans ces arts sont nombreuses. Mais parmi les plus importantes se trouvent (vous l'aurez
+              sans doute remarqué) Matrix, Star Wars et la science-fiction en général (Mass Effect, Blade Runner,
+              Cyberpunk pour ne citer qu'eux, pêle-mêle).
+            </p>
+            <p>L'animation, Occidentale ou Orientale (japonaise notamment) fait parti de ces arts qui ont bercé à la
+              fois mon enfance, mon adolescence et qui continue de m'accompagner dans ma vie de jeune adulte. Avec One
+              Piece, pour ne citer que le plus connu, j'ai passé ces 15 dernières années à suivre l'avancement de
+              l'histoire chaque semaine.</p>
+            <p>L'Histoire est également un domaine qui me passionne, et j'imagine que cela va de paire avec mon intérêt
+              pour la fantasy et tout ce qui contient des éléments de contexte médiévaux</p>
+          </div>
+        </div>
+        <div class="parallax-container">
+          <div class="parallax"><img src="assets/img/Star Citizen 17_02_2022 20_44_55.png"></div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <h2>Mais alors, qui suis-je ?</h2>
+            <p> J'aime me considérer comme quelqu'un de conciliant et de cohérent. Capable, et habitué, à travailler en
+              équipe, j'ai une bonne connaissance de mes forces et de mes faiblesses. Ainsi, je suis capable de me
+              débrouiller pour surmonter les obstacles auxquels je pourrais faire face.</p>
+            <p>
+              Ancien pentathlète en filière d'accès en haut niveau, la ténacité, la détermination et le dépassement de
+              soi sont des valeurs qui ont fait et qui font encore partie de mon quotidien. Non content d'avoir été
+              licencié au Noyon Pentathlon Moderne durant toute mon enfance/adolescence je suis aujourd'hui, presque 8
+              ans plus tard ma retraite en tant qu'athlète, bénévole auprès du club</p>
+            <p>Concernant le développement et l'informatique en général, après m'être intéressé à différents domaines et
+              après avoir à fait une année infructueuse dans une école de développement de jeux-vidéos sur
+              l'année scolaire 2019/2020 je peux affirmer que je suis un développeur attiré par le back-end et par la
+              rédaction de code.</p>
+          </div>
+        </div>
+        <div class="parallax-container">
+          <div class="parallax"><img src="assets/img/Star Citizen 17_03_2022 21_37_00.png"></div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <ul class="pagination">
+              <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+              <li class="active green darken-4"><a href="#!">A propos de moi</a></li>
+              <li class="waves-effect active indigo darken-4"><a href="#!" class="perk">Compétences</a></li>
+              <li class="waves-effect active indigo darken-4"><a href="#!" class="course">Parcours</a></li>
+              <li class="waves-effect active indigo darken-4 "><a href="#" class="perk"><i
+                    class="material-icons">chevron_right</i></a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <div class="section black col s1 m3 l6" id="perks">
-      <a href="#" class="material-icons close tooltipped left" id="closePerks" data-position="bottom" data-delay="50"
-        data-tooltip="Fermer">close</a>
-      <div class="row container">
+    </section>
+    <section class="section black col s1 m3 l6" id="perks">
+      <div class="section">
+        <a href="#" class="material-icons close tooltipped left" id="closePerks" data-position="bottom" data-delay="50"
+          data-tooltip="Fermer">close</a>
         <div class="row">
-          <h2 id="language" class="toggeable btn-flat waves-effect waves-light">
+          <ul class="pagination">
+            <li class="waves-effect active indigo darken-4"><a href="#!" class="hobby"><i
+                  class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect active indigo darken-4"><a href="#!" class="hobby">A propos de moi</a></li>
+            <li class="active green darken-4"><a href="#!">Compétences</a></li>
+            <li class="waves-effect active indigo darken-4"><a href="#!" class="course">Parcours</a></li>
+            <li class="waves-effect active indigo darken-4"><a href="#" class="course"><i
+                  class="material-icons">chevron_right</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row container ">
+        <div class="row center">
+          <div class="col s6">
+            <svg id="computer-svgrepo-com" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+              viewBox="0 0 488.4 488.4">
+              <g id="Groupe_2" data-name="Groupe 2">
+                <rect id="Rectangle_32" data-name="Rectangle 32" width="282.2" height="34.9"
+                  transform="translate(103.1 453.5)" fill="#0839ca" />
+                <rect id="Rectangle_33" data-name="Rectangle 33" width="202" height="66.3"
+                  transform="translate(143 367.5)" fill="#0839ca" />
+                <path id="Tracé_33" data-name="Tracé 33"
+                  d="M0,0V348.1H488.4V0ZM461.7,311.3A9.646,9.646,0,0,1,452,321H36.4a9.646,9.646,0,0,1-9.7-9.7V36.8a9.646,9.646,0,0,1,9.7-9.7H452a9.646,9.646,0,0,1,9.7,9.7V311.3Z"
+                  fill="#0839ca" />
+                <path id="Tracé_34" data-name="Tracé 34"
+                  d="M46.1,301.6H442.3V46.5H46.1ZM309.7,194.2a4.978,4.978,0,0,1,2.7-4.3l54.7-25.2-54.7-24.8a4.683,4.683,0,0,1-2.7-4.3V116a4.4,4.4,0,0,1,6.3-4l82.4,38.3a4.683,4.683,0,0,1,2.7,4.3v21.7a4.978,4.978,0,0,1-2.7,4.3L316,218.5a4.5,4.5,0,0,1-6.4-4.1V194.2Zm-121.2,59L264.3,90.7a4.683,4.683,0,0,1,4.3-2.7h17.2a4.874,4.874,0,0,1,4.4,6.9L214.3,257.4a4.683,4.683,0,0,1-4.3,2.7H192.8A4.863,4.863,0,0,1,188.5,253.2ZM87.6,154.7a4.978,4.978,0,0,1,2.7-4.3l82.5-38.3a4.433,4.433,0,0,1,6.3,4v20a4.978,4.978,0,0,1-2.7,4.3l-54.7,24.8,54.7,25.2a4.683,4.683,0,0,1,2.7,4.3v20.4a4.41,4.41,0,0,1-6.3,4L90.3,181.2a4.683,4.683,0,0,1-2.7-4.3S87.6,154.7,87.6,154.7Z"
+                  fill="#0839ca" />
+              </g>
+            </svg>
+            <h2>Front-end</h2>
+          </div>
+          <div class="col s6">
+            <svg id="web-development-svgrepo-com" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+              viewBox="0 0 400 350.06">
+              <path id="Tracé_11" data-name="Tracé 11"
+                d="M281.55,118.51a4.756,4.756,0,0,0-5.5-3.85L259,117.67a64.349,64.349,0,0,0-7.76-13.42l11.14-13.27a4.75,4.75,0,0,0-.59-6.69L246.88,71.78a4.75,4.75,0,0,0-6.69.59L229.06,85.63a63.882,63.882,0,0,0-14.57-5.31V63.01a4.748,4.748,0,0,0-4.75-4.75H190.27a4.754,4.754,0,0,0-4.75,4.75V80.32a63.414,63.414,0,0,0-14.57,5.31L159.82,72.37a4.744,4.744,0,0,0-6.69-.58L138.22,84.3a4.75,4.75,0,0,0-.59,6.69l11.14,13.27a63.91,63.91,0,0,0-7.76,13.42l-17.05-3.01a4.756,4.756,0,0,0-5.5,3.85l-3.38,19.17a4.752,4.752,0,0,0,3.85,5.5l17.06,3.01a64.18,64.18,0,0,0,2.68,15.27l-14.99,8.66a4.71,4.71,0,0,0-2.21,2.88,4.808,4.808,0,0,0,.47,3.6l9.73,16.86a4.738,4.738,0,0,0,2.88,2.21,4.741,4.741,0,0,0,3.6-.48l15.01-8.66a64.458,64.458,0,0,0,11.87,9.97l-5.93,16.28a4.715,4.715,0,0,0,.16,3.63,4.829,4.829,0,0,0,2.68,2.46l18.29,6.66a4.731,4.731,0,0,0,1.62.29,4.855,4.855,0,0,0,2.01-.44,4.8,4.8,0,0,0,2.46-2.68l5.93-16.28a64.131,64.131,0,0,0,15.5,0l5.93,16.28a4.73,4.73,0,0,0,2.46,2.68,4.856,4.856,0,0,0,2.01.44,4.731,4.731,0,0,0,1.62-.29l18.29-6.66a4.758,4.758,0,0,0,2.84-6.09l-5.93-16.28a64.458,64.458,0,0,0,11.87-9.97l15.01,8.66a4.763,4.763,0,0,0,2.37.64,4.667,4.667,0,0,0,1.23-.16,4.746,4.746,0,0,0,2.88-2.21l9.73-16.86a4.735,4.735,0,0,0-1.73-6.48l-14.99-8.66a64.091,64.091,0,0,0,2.68-15.27l17.06-3.01a4.752,4.752,0,0,0,3.85-5.5l-3.38-19.17ZM200,168.15a26.12,26.12,0,1,1,26.12-26.12A26.121,26.121,0,0,1,200,168.15Z"
+                fill="#2cbb14" />
+              <path id="Tracé_12" data-name="Tracé 12"
+                d="M366.68,0H33.32A33.355,33.355,0,0,0,0,33.32V250.59a33.355,33.355,0,0,0,33.32,33.32H140.73l-20.39,44.96A14.992,14.992,0,0,0,134,350.06H266.02a15,15,0,0,0,13.31-21.92l-20.06-44.23H366.68A33.361,33.361,0,0,0,400,250.59V33.32A33.353,33.353,0,0,0,366.69,0ZM370,250.59a3.325,3.325,0,0,1-3.32,3.32H33.32A3.325,3.325,0,0,1,30,250.59V33.32A3.325,3.325,0,0,1,33.32,30H366.68A3.325,3.325,0,0,1,370,33.32V250.59Z"
+                fill="#2cbb14" />
+            </svg>
+            <h2>Back-end</h2>
+          </div>
+        </div>
+        <div class="row center">
+          <div class="col s6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 453.74 390.605">
+              <path id="Tracé_22" data-name="Tracé 22"
+                d="M455.56,35.67,440.14,16.89a46.462,46.462,0,0,0-65.33-6.33L189.24,163.33c-2.59-.24-5.2-.37-7.82-.37a82.909,82.909,0,0,0-52.56,18.88c-16.25,13.37-50.51,52.32-77.51,91.93C14.82,327.35,4.14,362,18.71,379.71c5.95,7.22,15.63,10.89,28.75,10.89,53.57,0,161.31-60.18,186.6-81.01a82.149,82.149,0,0,0,29.75-55.88l185.43-152.7a46.4,46.4,0,0,0,6.32-65.34ZM243.9,251.75a62.271,62.271,0,0,1-22.56,42.38c-26.17,21.55-128.77,76.45-173.88,76.45h-.68l146.7-121.89a10,10,0,1,0-12.78-15.38L32.69,356.28c1.56-12.25,10.28-34.73,35.19-71.26,25.19-36.94,58.44-75.2,73.7-87.75a62.753,62.753,0,0,1,102.33,54.48Zm18.59-22.88a83.059,83.059,0,0,0-49.1-59.52l25.77-21.21,48.15,60.31L262.5,228.88ZM446.03,67.72a26.233,26.233,0,0,1-9.5,17.85L302.74,195.73l-48.14-60.3L387.52,26a26.442,26.442,0,0,1,37.17,3.6l15.42,18.78a26.224,26.224,0,0,1,5.92,19.34Z"
+                transform="translate(-12.419 0.004)" fill="#dd191c" />
+            </svg>
+            <h2>Design</h2>
+          </div>
+          <div class="col s6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" viewBox="0 0 297.01 293.05">
+              <g id="manager-svgrepo-com" transform="translate(0.01)">
+                <path id="Tracé_13" data-name="Tracé 13" d="M174.85,30.09a28.045,28.045,0,1,0,0,.01Z" fill="#12aed1" />
+                <path id="Tracé_14" data-name="Tracé 14"
+                  d="M104.63,142.13h88.43a10.43,10.43,0,0,0,10.43-10.43V93.14a24.689,24.689,0,0,0-17-23.46l-.05-.02L171.6,67.2a2.492,2.492,0,0,0-3.07,1.53L151.7,114.92a3.04,3.04,0,0,1-5.71,0L129.16,68.74a2.489,2.489,0,0,0-2.33-1.64c-.24,0-15.57,2.56-15.57,2.56A24.852,24.852,0,0,0,94.2,93.27V131.7a10.43,10.43,0,0,0,10.43,10.43h0Z"
+                  fill="#12aed1" />
+                <path id="Tracé_15" data-name="Tracé 15"
+                  d="M276.74,213.29a.844.844,0,0,0-.17-.05l-8.03-2.46a7.173,7.173,0,0,0-6.91,1.54l-17.31,15.65-17.31-15.65a7.173,7.173,0,0,0-6.91-1.54l-8.03,2.46a.984.984,0,0,1-.16.05,29.594,29.594,0,0,0-20.26,28.11v44.48a7.17,7.17,0,0,0,7.17,7.17h91.01a7.17,7.17,0,0,0,7.17-7.17V241.4a29.594,29.594,0,0,0-20.26-28.11h0Z"
+                  fill="#12aed1" />
+                <path id="Tracé_16" data-name="Tracé 16"
+                  d="M244.33,205.83a29.92,29.92,0,1,0-29.92-29.92,29.951,29.951,0,0,0,29.92,29.92Z" fill="#12aed1" />
+                <path id="Tracé_17" data-name="Tracé 17"
+                  d="M85.08,213.29a1.093,1.093,0,0,0-.17-.05l-8.03-2.46a7.154,7.154,0,0,0-6.91,1.54L52.66,227.97,35.35,212.32a7.173,7.173,0,0,0-6.91-1.54s-8.14,2.5-8.19,2.51A29.594,29.594,0,0,0-.01,241.4v44.48a7.17,7.17,0,0,0,7.17,7.17H98.17a7.17,7.17,0,0,0,7.17-7.17V241.4a29.594,29.594,0,0,0-20.26-28.11Z"
+                  fill="#12aed1" />
+                <path id="Tracé_18" data-name="Tracé 18"
+                  d="M22.75,175.91a29.92,29.92,0,1,0,29.92-29.92,29.951,29.951,0,0,0-29.92,29.92Z" fill="#12aed1" />
+                <path id="Tracé_19" data-name="Tracé 19"
+                  d="M252.51,97.02a7.674,7.674,0,0,0-7.97,12.42l10.5,11.94a7.683,7.683,0,0,0,11.54,0l10.5-11.94a7.683,7.683,0,0,0-9.07-12.01A78.831,78.831,0,0,0,249.09,52.6a7.681,7.681,0,1,0-11.54,10.14,63.1,63.1,0,0,1,14.97,34.28h0Z"
+                  fill="#12aed1" />
+                <path id="Tracé_20" data-name="Tracé 20"
+                  d="M31.13,121.38a7.683,7.683,0,0,0,11.54,0l10.5-11.94a7.677,7.677,0,0,0-7.98-12.42A63.232,63.232,0,0,1,60.16,62.74,7.681,7.681,0,0,0,48.62,52.6,78.764,78.764,0,0,0,29.7,97.43a7.683,7.683,0,0,0-9.07,12.01l10.5,11.94Z"
+                  fill="#12aed1" />
+                <path id="Tracé_21" data-name="Tracé 21"
+                  d="M154.62,67.66a3.427,3.427,0,0,0-2.55-1.06h-7.14a3.465,3.465,0,0,0-2.55,1.06,3.315,3.315,0,0,0-.44,3.9l3.82,5.75-1.79,15.07,3.52,9.36a1.076,1.076,0,0,0,2.02,0l3.52-9.36-1.79-15.07,3.82-5.75a3.313,3.313,0,0,0-.43-3.9h0Z"
+                  fill="#12aed1" />
+              </g>
+            </svg>
+
+            <h2>Gestion de projet</h2>
+          </div>
+        </div>
+        <div class="row center">
+          <h2 id="language">
             Langages
           </h2>
-          <div id="languages">
+        </div>
+        <div class="row center">
+          <div class="col s6">
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>C</li>
-              <li>C++</li>
+              <li>HTML
+                <div class="progress">
+                  <div class="determinate green darken-4" style="width: 80%"></div>
+                </div>
+              </li>
+              <li>CSS
+                <div class="progress">
+                  <div class="determinate green darken-4" style="width: 60%"></div>
+                </div>
+              </li>
+              <li>Javascript
+                <div class="progress">
+                  <div class="determinate green darken-4" style="width: 75%"></div>
+                </div>
+              </li>
+              <li>PHP
+                <div class="progress">
+                  <div class="determinate green darken-4" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col s6">
+            <ul>
+              <li>MySQL
+                <div class="progress">
+                  <div class="determinate green darken-4" style="width: 80%"></div>
+                </div>
+              </li>
+              <li>C
+                <div class="progress">
+                  <div class="determinate green darken-4" style="width: 30%"></div>
+                </div>
+              </li>
+              <li>C++
+                <div class="progress">
+                  <div class="determinate green darken-4" style="width: 45%"></div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="row">
-          <h2 id="plugins" class="toggeable btn-flat waves-effect waves-light">
+        <div class="row center">
+          <h2 id="plugins">
             Framework
           </h2>
-          <div id="plugin">
-            <ul>
-              <li>Bootstrap</li>
-              <li>Materialize</li>
-              <li>jQuery</li>
-              <li>Symphony</li>
-              <li>VueJS</li>
-            </ul>
-          </div>
+          <ul>
+            <li>Bootstrap</li>
+            <li>Materialize</li>
+            <li>jQuery</li>
+            <li>Symphony 5</li>
+            <li>VueJS</li>
+            <li>ReactJS</li>
+          </ul>
         </div>
         <div class="row">
-          <h2 id="misc" class="toggeable btn-flat waves-effect waves-light">
+          <h2 id="misc" class="center">
             Divers
           </h2>
-          <div id="miscellaneous">
+          <div class="col s2 offset-s3">
             <ul>
+              <li>Git</li>
               <li>WAMP</li>
               <li>LAMP</li>
+              <li>NPM</li>
+              <li>Yarn</li>
+              <li>Apache</li>
+              <li>PHPMyAdmin</li>
+              <li>Composer</li>
+              <li>Doctrine</li>
+              <li>OpenGL</li>
+            </ul>
+          </div>
+          <div class="col s3 offset-s3">
+            <ul>
               <li>Wordpress</li>
               <li>Photoshop</li>
               <li>Illustrator</li>
               <li>InDesign</li>
               <li>Adobe XD</li>
               <li>Laragon</li>
-              <li>OpenGL</li>
-              <li>Composer</li>
-              <li></li>
-              <li>Git</li>
-              <li>PHPMyAdmin</li>
-              <li>Apache</li>
-              <li>Doctrine</li>
-              <li>Grunt</li>
-              <li>Bower</li>
-              <li>jMerise</li>
+              <li>Looping</li>
+              <li>Umbrello</li>
               <li>Trello</li>
+              <li>OSINT / GEOINT</li>
             </ul>
           </div>
         </div>
+        <div class="row">
+          <h2 class="center">Portfolio</h2>
+          <div class="col s12">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/NPM Excel Converter - Opera 11_04_2022 14_33_21.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Gestionnaire de compétition<i
+                    class="material-icons right">more_vert</i></span>
+                <p class="black-text">Application métier en cours de développement, de manière
+                  bénévole, pour le Noyon
+                  Pentathlon Moderne afin de simplifier l'organisation des compétitions à domicile.</p>
+                <p><a href="https://github.com/loicmagny/Excel-converter">Github</a></p>
+              </div>
+              <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                  <li class="tab"><a class="green-text darken-4 active" href="#test5">Cahier des charges</a></li>
+                  <li class="tab"><a class="green-text darken-4" href="#test4">Technologies utilisées</a></li>
+                  <li class="tab"><a class="green-text darken-4" href="#test6">Notes</a></li>
+                </ul>
+              </div>
+              <div class="card-content grey lighten-4">
+                <div id="test4">
+                  <ul class="black-text">
+                    <li>HTML / CSS</li>
+                    <li>PHP / MySQL</li>
+                    <li>Javascript + jQuery</li>
+                    <li>Framework: Materialize</li>
+                    <li>Utilisation d'Ajax</li>
+                  </ul>
+
+                </div>
+                <div id="test5">
+                  <ul class="black-text">
+                    <li>- Extraction des inscriptions des athlètes depuis un ou plusieurs fichier(s) Excel</li>
+                    <li>- Enregistrement/Affichage/Modification/Suppression pour les athlètes et leurs résultats</li>
+                    <li>- Utilisable hors-ligne</li>
+                    <li>- Pas de rechargement de la page</li>
+                    <li>- Tri automatique des athlètes pour la formation des séries</li>
+                    <li>- Calcul automatiques des temps, des handicap et des scores</li>
+                    <li>- Gestion des fautes</li>
+                    <li>- Gestion des compétitions Triathle et Laser Run en simultané</li>
+                    <li>- Interface simple</li>
+                    <li>- Fonctions de tri et de recherche</li>
+                    <li>- Doit suivre les barèmes officiels de la Fédération Française de Pentathlon Moderne</li>
+                    <li>- Possibilité de mettre à jour les barèmes directement dans l'application</li>
+                    <li>- Possibilité d'imprimer les résultats et les séries de chaque épreuve</li>
+                    <li>- Tri automatique des résultats</li>
+                    <li>- Adaptation des méthodes de tri et distribution des athlètes en fonction du nombre de ceux-ci
+                    </li>
+                  </ul>
+                </div>
+                <div id="test6">
+                  <p class="black-text">
+                    Une fois que l'application aura atteint un état de complétion suffisant pour être utilisé dans une
+                    compétition, j'aimerais la refaire en Symfony.
+                    Au 10 Avril 2022, le projet est complété à 60% environ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <ul class="pagination">
+              <li class="waves-effect active indigo darken-4"><a href="#!" class="hobby"><i
+                    class="material-icons">chevron_left</i></a></li>
+              <li class="waves-effect active indigo darken-4"><a href="#!" class="hobby">A propos de moi</a></li>
+              <li class="active green darken-4"><a href="#!">Compétences</a></li>
+              <li class="waves-effect active indigo darken-4"><a href="#!" class="course">Parcours</a></li>
+              <li class="waves-effect active indigo darken-4"><a href="#" class="course"><i
+                    class="material-icons">chevron_right</i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section black col s1 m3 l6" id="courses">
+      <div class="section">
+        <a href="#" class="material-icons close tooltipped" id="closeCourses" data-position="bottom" data-delay="50"
+          data-tooltip="Fermer">close</a>
+        <div class="row">
+          <ul class="pagination">
+            <li class="waves-effect active indigo darken-4 white-text"><a href="#!" class="perk white-text"><i
+                  class="material-icons waves-effect white-text">chevron_left</i></a></li>
+            <li class="waves-effect active indigo darken-4 white-text"><a href="#!" class="hobby white-text">A propos de
+                moi</a></li>
+            <li class="waves-effect active indigo darken-4 white-text"><a href="#!"
+                class="perk white-text">Compétences</a>
+            </li>
+            <li class="active green darken-4 white-text"><a href="#!" class="green darken-4 white-text">Parcours</a>
+            </li>
+            <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="row">
+          <h2 id="degreesList">
+            Diplômes
+          </h2>
+          <ul>
+            <li>
+              Noyon, 2015: Bac Economique et Social, mention Assez Bien
+            </li>
+            <li>Noyon, 2018: Titre Professionnel "Développeur Web/Web Mobile" RNCP
+              III</li>
+          </ul>
+          <div class="row">
+            <h2>Certification(s)</h2>
+            <div class="col s4 m4">
+              <div class="card center">
+                <div class="card-image">
+                  <img class="responsive-img" src="assets/img/Logo-ICDL.png">
+                </div>
+                <div class="card-content black-text center">
+                  <span class="card-title black-text flow-text">Certification ICDL PHP</span>
+                  <a href="https://verif.icdlfrance.org/candidat/426017">Accéder au certificat</a>
+                  <p>2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h2 id="proList">
+              Expériences professionnelles
+            </h2>
+            <ul>
+              <li>Décembre 2018: Facteur chez La Poste, Thourotte</li>
+              <li>Juillet/Août 2018: Facteur chez La Poste, Compiègne</li>
+              <li>
+                Novembre 2017: Lauréat du Créathon "Dream Your Drone" lors des
+                Inovia Drone Days à Noyon.
+              </li>
+              <li>Septembre 2017: Serveur au restaurant La Meïda, Lille</li>
+              <li>Juillet 2017: Manutentionnaire chez St-Gobain, Thourotte.</li>
+              <li>Juillet/Août 2016: Manutentionnaire chez St-Gobain, Thourotte.</li>
+            </ul>
+          </div>
+          <div class="row">
+            <h2 id="notImportant">
+              Informations Complémentaires
+            </h2>
+            <p>Anglais courant</p>
+            <p>Permis B, véhiculé</p>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <ul class="pagination">
+              <li class="waves-effect active indigo darken-4 white-text"><a href="#!" class="perk white-text"><i
+                    class="material-icons waves-effect white-text">chevron_left</i></a></li>
+              <li class="waves-effect active indigo darken-4 white-text"><a href="#!" class="hobby white-text">A propos
+                  de moi</a></li>
+              <li class="waves-effect active indigo darken-4 white-text"><a href="#!"
+                  class="perk white-text">Compétences</a></li>
+              <li class="active green darken-4 white-text"><a href="#!" class="green darken-4 white-text">Parcours</a>
+              </li>
+              <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <ul class="side-nav grey darken-2" id="option-menu">
+      <form class="container" action="#">
+        <h1>Modifier le fond</h1>
+        <div clas="row">
+          <label for="alpha">Alpha</label>
+          <p class="range-field">
+            <input type="range" id="alpha" min="0" value="10" max="100" />
+          </p>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="red" value="0" type="text" class="validate">
+            <label class="active" for="red">Rouge</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="green" value="0" type="text" class="validate">
+            <label class="active" for="green">Vert</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="blue" value="0" type="text" class="validate">
+            <label class="active" for="blue">Bleu</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="fontSize" value="12" type="text" class="validate">
+            <label class="active" for="fontSize">Police</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="fontColor" type="text" value="#0f0" class="validate">
+            <label class="active" for="fontColor">Couleur</label>
+          </div>
+        </div>
+      </form>
+    </ul>
+
+    <div class="tapmenu">
+      <!-- Element Showed -->
+      <a id="menu" class="waves-effect waves-light btn btn-floating green darken-4"
+        onclick="$('.tap-target').tapTarget('open')"><i class="material-icons">menu</i></a>
+      <div class="tap-target green darken-4" data-activates="menu">
+        <div class="tap-target-content white-text pulse">
+          <ul class="center">
+            <li><a href="#" class="hobby btn-flat waves waves-effect white-text" class="white-text center"><i
+                  class="material-icons white-text left">account_circle</i>A propos de moi</a></li>
+            <li><a href="#" class="perk btn-flat waves waves-effect white-text"><i
+                  class="material-icons white-text left">dvr</i>Compétences</a></li>
+            <li><a href="#" class="course btn-flat waves waves-effect white-text"><i
+                  class="material-icons white-text left">assignment</i>Parcours</a></li>
+            <li><a href="#" data-activates="option-menu" class="options btn-flat waves waves-effect white-text"><i
+                  class="material-icons white-text left">settings</i>Options</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="section black" id="hobbies">
-      <a href="#" class="material-icons close tooltipped" id="closeHobbies" data-position="bottom" data-delay="50"
-        data-tooltip="Fermer">close</a>
-      <div class="row container">
-        <p>Jeux-vidéos</p>
-        <p>Histoire</p>
-        <p>Cinéma</p>
-        <p>Musique</p>
-      </div>
-    </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/libs/materialize/dist/js/materialize.min.js"></script>
-    <script src="assets/js/materializeDOMElements.js">
-    </script>
-    <script src="assets/js/web.js"></script>
+    <script src="assets/js/materializeDOMElements.js" async></script>
+    <script src="assets/js/matrix.js"></script>
   </body>
 
 </html>

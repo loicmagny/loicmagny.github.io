@@ -1,117 +1,87 @@
-$(document).ready(function () {
-    $("#degreesList").click(function () {
-        $("#degrees").toggle();
-        $("#pro").hide();
-        $("#optional").hide();
-        $("#miscellaneous").hide();
-        $("#languages").hide();
-        $("#plugin").hide();
-        return false;
-    });
-    $("#proList").click(function () {
-        $("#pro").toggle();
-        $("#degrees").hide();
-        $("#optional").hide();
-        $("#miscellaneous").hide();
-        $("#languages").hide();
-        $("#plugin").hide();
-        return false;
-    });
-    $("#notImportant").click(function () {
-        $("#optional").toggle();
-        $("#degrees").hide();
-        $("#pro").hide();
-        $("#miscellaneous").hide();
-        $("#languages").hide();
-        $("#plugin").hide();
-        return false;
-    });
-    $("#misc").click(function () {
-        $("#miscellaneous").toggle();
-        $("#degrees").hide();
-        $("#pro").hide();
-        $("#optional").hide();
-        $("#languages").hide();
-        $("#plugin").hide();
-        return false;
-    });
-    $("#language").click(function () {
-        $("#languages").toggle();
-        $("#degrees").hide();
-        $("#pro").hide();
-        $("#optional").hide();
-        $("#miscellaneous").hide();
-        $("#plugin").hide();
-        return false;
-    });
-    $("#plugins").click(function () {
-        $("#plugin").toggle();
-        $("#degrees").hide();
-        $("#pro").hide();
-        $("#optional").hide();
-        $("#miscellaneous").hide();
-        $("#languages").hide();
-        return false;
-    });
-    $("#course").click(function () {
-        $("#courses").toggle();
-        $("#degrees").hide();
-        $("#pro").hide();
-        $("#optional").hide();
-        $("#miscellaneous").hide();
-        $("#languages").hide();
-        $("#plugin").hide();
-        $("#perks").hide();
-        $("#hobbies").hide();
-    });
-    $("#perk").click(function () {
-        $("#perks").toggle();
-        $("#degrees").hide();
-        $("#pro").hide();
-        $("#optional").hide();
-        $("#miscellaneous").hide();
-        $("#languages").hide();
-        $("#plugin").hide();
-        $("#courses").hide();
-        $("#hobbies").hide();
-    });
-    $("#hobby").click(function () {
-        $("#hobbies").toggle();
-        $("#degrees").hide();
-        $("#pro").hide();
-        $("#optional").hide();
-        $("#miscellaneous").hide();
-        $("#languages").hide();
-        $("#plugin").hide();
-        $("#courses").hide();
-        $("#perks").hide();
-    });
+$(document).ready(function() {
+	$('.course').click(function() {
+		$('#courses').toggle();
+		$('#degrees').hide();
+		$('#pro').hide();
+		$('#optional').hide();
+		$('#miscellaneous').hide();
+		$('#languages').hide();
+		$('#plugin').hide();
+		$('#perks').hide();
+		$('#about').hide();
+		$('canvas').hide();
+	});
+	$('.perk').click(function() {
+		$('#perks').toggle();
+		$('#degrees').hide();
+		$('#pro').hide();
+		$('#optional').hide();
+		$('#miscellaneous').hide();
+		$('#languages').hide();
+		$('#plugin').hide();
+		$('#courses').hide();
+		$('#about').hide();
+		$('canvas').hide();
+	});
+	$('.hobby').click(function() {
+		$('#about').toggle();
+		$('#degrees').hide();
+		$('#pro').hide();
+		$('#optional').hide();
+		$('#miscellaneous').hide();
+		$('#languages').hide();
+		$('#plugin').hide();
+		$('#courses').hide();
+		$('#perks').hide();
+		$('canvas').hide();
+	});
+	$('.option').click(function() {
+		$('#options').toggle();
+		$('#perks').hide();
+		$('#degrees').hide();
+		$('#pro').hide();
+		$('#optional').hide();
+		$('#miscellaneous').hide();
+		$('#languages').hide();
+		$('#plugin').hide();
+		$('#courses').hide();
+		$('#about').hide();
+		$('canvas').hide();
+	});
 
+	$('#closeAbout').click(function() {
+		$('#about').hide();
+		$('canvas').show();
+	});
+	$('#closeCourses').click(function() {
+		$('#courses').hide();
+		$('canvas').show();
+	});
+	$('#closePerks').click(function() {
+		$('#perks').toggle();
+		$('#degrees').hide();
+		$('canvas').show();
+	});
+	$('#closeOptions').click(function() {
+		$('#options').toggle();
+		$('#degrees').hide();
+		$('canvas').show();
+	});
 
+	$('#courses').css('display', 'none');
+	$('#perks').css('display', 'none');
+	$('#about').css('display', 'none');
+	$('.options').sideNav({
+		menuWidth: 500, // Default is 300
+		edge: 'left', // Choose the horizontal origin
+		closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+		draggable: true // Choose whether you can drag to open on touch screens
+	});
+	// START OPEN
+	// $('.button-collapse').sideNav('show');
+	$('.modal').modal();
+	$('.parallax').parallax();
+	$('.tap-target').tapTarget('open');
 
-    $("#closeHobbies").click(function () {
-        $("#hobbies").hide();
-    });
-    $("#closeCourses").click(function () {
-        $("#courses").hide();
-    });
-    $("#closePerks").click(function () {
-        $("#perks").toggle();
-        $("#degrees").hide();
-    });
-
-
-    $("#courses").css("display", "none");
-    $("#perks").css("display", "none");
-    $("#hobbies").css("display", "none");
-    $(".button-collapse").sideNav();
-    $(".button-collapse").sideNav({
-        menuWidth: 250, // Default is 300
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        draggable: true, // Choose whether you can drag to open on touch screens,
-    });
-
-
-    $(".modal").modal();
+	$('.fixed-action-btn').floatingActionButton();
 });

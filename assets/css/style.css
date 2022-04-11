@@ -1,40 +1,25 @@
-body {
-  background: #000000;
-}
-
-svg,
-html,
-body {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-image: radial-gradient(circle, rgb(211, 24, 24), black);
-  z-index: -1;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
 .side-nav {
   background-color: black;
 }
 
+body {
+  background-color: black;
+}
+
+canvas {
+  display: block;
+}
+
 .button-collapse {
-  background-color: purple;
   border-radius: 50%;
-  width: 5em;
+  width: 5rem;
   z-index: 11;
 }
 
 body a.button-collapse {
   position: fixed;
-  left: 1vmin;
-  top: 1vmin;
+  right: 1vmin;
+  bottom: 1vmin;
 }
 
 .makerName {
@@ -50,10 +35,24 @@ body a.button-collapse {
 }
 
 
-h2 {
-  font-size: 2em;
+h1,
+h2,
+h3 {
+
   color: white;
   font-family: "Righteous", cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 p,
@@ -75,38 +74,22 @@ ul {
   color: white;
 }
 
-h1 {
-  font-family: "Righteous", cursive;
-  font-size: 3em;
-  color: black;
-}
-
-#optional,
-#miscellaneous,
-#plugin,
-#languages,
-#pro,
-#degrees {
-  display: none;
-}
-
 .toggeable,
 #course,
 #perk,
 #hobby {
-  color: aqua;
+  color: green
 }
 
 .toggeable:hover,
 #course:hover,
 #perk:hover,
 #hobby:hover {
-  color: crimson;
+  color: indigo;
 }
 
 .section {
-  width: 90rem;
-  position: absolute;
+  color: green;
   padding: 1%;
   margin: 0 auto;
   opacity: 0.8;
@@ -135,7 +118,7 @@ h1 {
 }
 
 .score {
-  font-size: 1.6em;
+  /* font-size: 1.6em; */
   color: black;
 }
 
@@ -143,23 +126,26 @@ h1 {
   color: green;
 }
 
+#opquast:hover {
+  color: blue;
+}
+
 .close {
-  color: aqua;
+  color: green;
 }
 
 .close:hover {
   color: crimson;
 }
 
-circle {
-  fill: white;
-  position: relative;
-  z-index: -1;
+.tapmenu {
+  bottom: 0px;
+  position: fixed;
+  right: 0px;
 }
 
-line {
-  stroke: rgba(0, 255, 255, 0.74);
-  stroke-width: 1;
-  position: relative;
-  z-index: -1;
+.card-title
+{
+  color: black;
+  font-size: 0.5rem;
 }
