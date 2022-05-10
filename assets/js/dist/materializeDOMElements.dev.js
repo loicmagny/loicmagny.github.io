@@ -85,5 +85,5 @@ $(document).ready(function () {
 
   $('.modal').modal();
   $('.parallax').parallax();
-  $('.tap-target').tapTarget('open');
+  $('.tap-target').tapTarget('open'); // $('.fixed-action-btn').floatingActionButton();
 });
